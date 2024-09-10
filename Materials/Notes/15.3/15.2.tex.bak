@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=0.8 in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{macros}
+\usepackage{mathtools}
+\usepackage{enumerate}
+\usepackage{verbatim}
+\usepackage{amsthm}
+
+\title{}
+%\content{}
+
+
+
+\let \proj \undefined
+\renewcommand{\tr}{ \mathrm{tr}}
+\DeclareMathOperator{\SU}{SU}
+\DeclareMathOperator{\proj}{proj}
+\newcommand{\sS}{\mathscr{S}}
+\DeclareMathOperator{\comp}{comp}
+\newcommand{\A}{\mathcal{A}}
+\renewcommand{\D}{\mathcal{D}}
+\renewcommand{\e}{\epsilon}
+\newcommand{\Are}{\A_{r,\e}}
+\newcommand{\Kre}{K_{r,\e}}
+\newcommand{\Dre}{\D_{r,\e}}
+\newcommand{\rt}{\tilde{r}}
+\newcommand{\et}{\tilde{\e}}
+\newtheorem{definition}{Definition}
+\newenvironment{solution}
+  {\begin{proof}[Solution]}
+  {\end{proof}}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+
+\newcommand{\vr}{\mathbf{r}}
+\newcommand{\vF}{\mathbf{F}}
+
+
+
+\begin{document}
+\section*{15.3. Double Integrals over general regions and Properties}
+Goals from this section:
+\begin{enumerate}
+\item Be able to compute double integrals over general regions by switching the order of integration if necessary.
+\end{enumerate}
+In the previous section we saw how to integrate over rectangles using Fubini's theorem. Now we'll see how to integrate over more general regions and we'll see two such types of regions. In practice, a given region that may not fall under any of those categories, but splitting it into smaller subregions will allow us to perform the integration.
+
+\subsection*{1st case}
+Suppose that we have a region can be described as $$D=\{ (x,y):a\leq x \leq b, g_1(x)\leq y\leq g_2(y)\}$$ and a continuous Then the integral of 
+
+
+
+\end{document}
+

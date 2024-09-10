@@ -1,0 +1,244 @@
+\documentclass[12pt]{article}
+
+\title{}
+\author{Nikolas Eptaminitakis}
+
+% \usepackage[T1]{fontenc}
+
+
+% \usepackage{librefranklin}
+% \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage{palatino}
+
+
+% Margins
+ \setlength{\oddsidemargin}{0 in}
+ \setlength{\evensidemargin}{0 in}
+ \setlength{\textwidth}{6.6 in}
+ \setlength{\topmargin}{0 in}
+ \setlength{\textheight}{8.55 in}
+\setlength{\headheight}{0.18 in}
+
+% Packages  
+%\usepackage[margin=0.8 in]{geometry} % decides size of margins, paper etc
+%\usepackage{palatino} % a font
+\usepackage{hhline}
+%\usepackage{forest}
+\usepackage{cancel} % to cross out stuff
+\usepackage{amsmath}
+\usepackage{marginnote}  % to put notes on the margins
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{accents}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{enumerate}
+%\usepackage{verbatim}
+\usepackage{comment}
+%\usepackage{makeidx}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage[noadjust]{cite}
+\usepackage{color}
+\usepackage{pst-node}
+\usepackage{tikz-cd} 
+\usepackage[toc,page]{appendix}			% table of contents
+
+
+% Global options
+\allowdisplaybreaks
+\mathtoolsset{showonlyrefs}
+
+
+% Math Operators
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\pv}{pv}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Int}{int}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\sing}{sing}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\II}{II}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\adj}{adj}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\arcsinh}{arsinh}
+\DeclareMathOperator{\artanh}{artanh}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\arcosh}{arcosh}
+\DeclareMathOperator{\Diff}{Diff}
+
+%Special Characters
+\let \sectionsymbol \S
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\C}{\mathbb{C}}
+\renewcommand{\S}{\mathbb{S}}
+\renewcommand{\H}{\mathbb{H}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\pr}{\mathcal{p}\mathcal{r}}
+\newcommand{\ru}{{\sqrt{u}}}
+\newcommand{\SM}{\overline{S^*M}}
+\newcommand{\pdo}{\Psi\text{DO}}
+\newcommand{\ox}{\o{\xi}}
+\newcommand{\tM}{\tilde{M}}
+\newcommand{\tg}{\tilde{g}}
+\newcommand{\p}{\partial}
+\newcommand{\n}{\nabla}
+\newcommand{\on}{\overline{\n}}
+\newcommand{\tn}{\tilde{\nabla}}
+\newcommand{\oM}{\overline{M}}
+\newcommand{\tX}{\widetilde{X}}
+\newcommand{\ta}{{\widetilde{\alpha}}}
+\newcommand{\tx}{{\widetilde{x}}}
+\newcommand{\oX}{\overline{X}}
+\newcommand{\X}{\mathfrak{X}}
+\newcommand{\oW}{\overline{W}}
+\newcommand{\oT}{\overline{T}}
+\newcommand{\tf}{\tilde{f}}
+\newcommand{\tr}{\tilde{\r}}
+\newcommand{\x}{{x_c}}
+\newcommand{\oU}{\overline{U}}
+\newcommand{\oH}{\overline{H}}
+\newcommand{\oSU}{\o{S^*U}}
+\newcommand{\oSH}{\overline{S^*\mathbb{H}^2}}
+\newcommand{\rg}{\rangle}
+\renewcommand{\lg}{\langle}
+\newcommand{\bTM}{{}^bT^*\oM}
+\newcommand{\Di}{\Delta\iota}
+\newcommand{\hx}{\hat{\xi}}
+\newcommand{\ba}{\breve{a}}
+\newcommand{\tz}{\widetilde{\zeta}}
+\newcommand{\hY}{\hat{Y}}
+\newcommand{\tPhi}{\widetilde{\Phi}}
+\newcommand{\og}{\overline{\g}}
+\newcommand{\prl}{\parallel}
+\newcommand{\cM}{\mathring{M}}
+
+
+% Calligraphic letters
+
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calE}{\mathcal{E}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calG}{\mathcal{G}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calL}{\mathcal{L}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\calR}{\mathcal{R}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calU}{\mathcal{U}}
+\newcommand{\calV}{\mathcal{V}}
+\newcommand{\calW}{\mathcal{W}}
+\newcommand{\calY}{\mathcal{Y}}
+\newcommand{\calZ}{\mathcal{Z}}
+
+
+%Greek Letters
+
+\renewcommand{\a}{\alpha}
+\renewcommand{\b}{\beta}
+\newcommand{\g}{\gamma}
+\renewcommand{\d}{\delta}
+\let\epsilon\varepsilon
+\newcommand{\e}{\epsilon}
+\newcommand{\h}{\eta}
+\newcommand{\z}{\zeta}
+\newcommand{\smsec}{\G_0^{\frac{1}{2}}}
+\newcommand{\G}{\Gamma}
+\newcommand{\oG}{\overline{\Gamma}}
+\renewcommand{\r}{\rho}
+\renewcommand{\t}{\tau}
+\renewcommand{\k}{\kappa}
+\renewcommand{\l}{\lambda}
+\newcommand{\s}{\sigma}
+\renewcommand{\th}{\theta}
+\newcommand{\om}{\omega}
+\newcommand{\w}{\omega}
+\renewcommand{\oe}{\overline{\eta}}
+\newcommand{\tU}{\tilde{U}}
+
+% Environments
+
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{{Lemma}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{remark}{Remark}
+\newtheorem{corollary}{Corollary}
+\newtheorem{example}{Example}
+\newtheorem{ansatz}{Ansatz}
+\newtheorem{problem}{Problem}
+\newtheorem{question}{Question}
+\newenvironment{solution}{\paragraph{Solution:}}{\hfill$\square$}
+\newtheorem{goal}{Goal}
+\newtheorem{claim}{Claim}
+\newenvironment{answer}{\paragraph{Answer:}}{\hfill$\square$}
+
+
+\let \o \undefined
+\def \o#1{\overline{#1}}
+\def\fr#1#2{\frac{#1}{#2}}
+\def\tt#1{\textit{#1}}
+
+% \let\printintex\undefined
+% \let\see\undefined
+
+\let\td\undefined
+\def \td#1{\widetilde{#1}}
+\let\implies\Rightarrow
+
+\begin{document}
+
+\section*{List of past exams}
+
+Please note: some problems involving the heat equation need you to know what the steady state solution is (from last week's homework).
+
+\bigskip
+
+\noindent If you have limited time, you should go over the exams below in the order they are listed. 
+Also you should focus on the topics you are struggling the most.
+
+\bigskip
+
+\noindent You should also go over the midterms and see what you did wrong; solutions can be found on Brighspace, under announcements.
+
+\begin{enumerate}
+    \item \url{https://weeklyjoys.files.wordpress.com/2013/01/ma303_fn_fa2009_sample.pdf}\\ (except: Problems 1, 2, 8, 11, 12, 23, 24)
+
+Answers: 3A, 4B, 5B, 6B, 7A, 9C, 10B and D, 13C, 14C,15E, 16B, 17E, 18A, 19B, 20C, 21A, 22C, 25E (In 25, the middle line of $(\dagger)$ should not be there, or $f(x)$ should be $v(x)$, as this is a steady state solution which is constant in time.)
+
+
+\item \url{https://weeklyjoys.files.wordpress.com/2013/01/ma303_fn_fa2013_ans.pdf}\\
+ (except Problems 1, 8, 11, 13, 14, 16, 20).\\ We haven’t seem a problem exactly like Problem 15 but it is cute and you know all you need to in order to solve it, in case you would like to challenge yourself)
+
+
+\item \url{https://weeklyjoys.files.wordpress.com/2013/01/ma303_fn_sp2012_sol.pdf}\\
+ (Except: Problems 2 (Series), 3, 5, 8 (Improved Euler), 9, 11)
+
+
+\item \url{https://weeklyjoys.files.wordpress.com/2013/01/ma303_fn_fa1997_alt.pdf}\\ (except: Problem 6, Problem II). \\
+(Side note: this exam is from 1997, and tape players were explicitly prohibited; you can bring one to the exam if you want to impress me)
+
+
+
+\item \url{https://weeklyjoys.files.wordpress.com/2013/01/ma303_fn_fa2010_sample.pdf}\\ (except: Problems 1, 3b, 4)
+
+
+
+\end{enumerate}
+
+
+
+
+\end{document}

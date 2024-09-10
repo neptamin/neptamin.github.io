@@ -1,0 +1,12 @@
+In[11]:= Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Parametrization of curves/circle.jpeg",ParametricPlot[{1+.2*Cos[t],.3+.2 Sin[t]},{t,Pi/6,Pi}]]
+Out[11]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Parametrization of curves/circle.jpeg
+
+In[12]:= Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Parametrization of curves/ellipse.jpeg",ParametricPlot[{.2*Cos[t],.1 Sin[t]},{t,0,Pi}]]
+Out[12]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Parametrization of curves/ellipse.jpeg
+In[13]:= Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Parametrization of curves/graph.jpeg",ParametricPlot[{t,t^2},{t,-.2,.5}]]
+Out[13]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Parametrization of curves/graph.jpeg
+In[19]:= Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Parametrization of curves/helix.jpeg",ParametricPlot3D[{.2Cos[t],.3Sin[t],.5t},{t,-.2,5Pi}]]
+Out[19]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Parametrization of curves/helix.jpeg
+
+In[21]:= Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Parametrization of curves/intersection.jpeg",ParametricPlot3D[{Cos[t],Sin[t],5+Sin[t]},{t,-.2,5Pi}]]
+Out[21]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Parametrization of curves/intersection.jpeg

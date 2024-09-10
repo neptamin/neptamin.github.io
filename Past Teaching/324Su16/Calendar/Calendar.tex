@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage{termcal}
+
+
+\newcommand{\MWFClass}{%
+\calday[Monday]{\classday} 
+\skipday
+\calday[Wednesday]{\classday} 
+\skipday
+\calday[Friday]{\classday} 
+\skipday\skipday
+}
+
+\newcommand{\Holiday}[2]{%
+\options{#1}{\noclassday}
+\caltext{#1}{#2}
+}
+
+\begin{document}
+\paragraph*{Tentative Calendar}
+\begin{center}
+\begin{calendar}{6/20/2016}{9} % Semester starts on 1/11/2010 and last for 16
+                    % weeks, including finals week
+\setlength{\calboxdepth}{.8in}
+\MWFClass
+% schedule
+\caltexton{1}{15.1 Double Integrals over Rectangles\\
+15.2 Iterated Integrals}
+\caltextnext{15.3 Double Integrals over general regions}
+\caltextnext{15.4 Polar Coordinates\\
+15.5 Applications of double integrals}
+\caltextnext{15.7 Triple integrals}
+\caltextnext{
+15.8 Cylindrical coordinates\\ \textbf{Homework 1 due}}
+%\caltextnext{}
+%\caltextnext{}
+%\caltextnext{\textbf{Homework 1 due}}
+\caltextnext{15.8 Spherical coordinates}
+%\caltextnext{}
+\caltextnext{\textbf{Homework 2 due}\\
+15.10: Change of Variables}
+\caltextnext{}
+\caltextnext{15.10 Change of Variables\\
+14.5 The chain rule}
+
+\caltextnext{14.5 The Chain Rule\\
+14.6 Directional derivatives \& Gradient}
+% ... and so on
+
+\caltextnext{14.6 Directional derivatives \& Gradient\\
+16.1 Vector Fields}
+\caltextnext{\textbf{Homework 3 due}\\
+16.2 Line integrals}
+\caltextnext{16.2 Line Integrals}
+
+\caltextnext{16.3 Fundamental Theorem of Calculus for line integrals}
+\caltextnext{\textbf{Homework 4 due}\\16.4 Green's Theorem\\
+16.5 Curl and Divergence}
+\caltextnext{Review}
+\caltextnext{}
+
+\caltextnext{16.5 Curl and Divergence\\16.6 Parametric surfaces and their areas}
+\caltextnext{\textbf{Homework 5 due}\\16.6 Parametric surfaces and their areas}
+\caltextnext{16.7 Surface integrals}
+\caltextnext{16.7 Surface integrals}
+\caltextnext{16.8 Stokes' theorem}
+\caltextnext{16.9 Divergence Theorem\\
+\textbf{Homework 6 due}}
+\caltextnext{16.9 Divergence Theorem\\Review}
+
+\caltextnext{Review}
+
+\Holiday{7/4/2016}{\textbf{Independence Day}}
+% ... and so on
+
+
+\caltext{7/8/2016}{\textbf{Midterm 1}}
+\caltext{7/29/2016}{\textbf{Midterm 2}}
+\caltext{8/19/2016}{\textbf{Final Exam}}
+\end{calendar}
+\end{center}
+\end{document}

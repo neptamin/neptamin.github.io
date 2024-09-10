@@ -1,0 +1,35 @@
+In[528]:= 
+r[u_,v_]:={Sin[u]Cos[v],Sin[u]Sin[v],Cos[u]};
+D[r[u,Pi/4],u]/.u->Pi/4
+Out[529]= {1/2,1/2,-(1/Sqrt[2])}
+In[522]:= 
+D[r[u,Pi/4],u]
+In[526]:= {Cos[u]/Sqrt[2],Cos[u]/Sqrt[2],-Sin[u]}
+ClearAll
+Out[526]= {Cos[u]/Sqrt[2],Cos[u]/Sqrt[2],-Sin[u]}
+In[533]:= ClearAll
+Clear[u,v]
+Out[533]= ClearAll
+In[576]:= v1=Show[ParametricPlot3D[{Sin[u]Cos[v],Sin[u]Sin[v],Cos[u]},{u,0,Pi},{v,0,2Pi},PlotStyle->Green],ContourPlot3D[({x,y,z}-r[Pi/4,-Pi/4]).Cross[(D[r[Pi/4,v],v]/.v->-Pi/4),(D[r[u,-Pi/4],u]/.u->Pi/4)]==0,{x,-1,1},{y,-1,1},{z,0,5},ContourStyle->{Opacity[0.4],LightBlue}],ParametricPlot3D[{r[u,-Pi/4]},{u,0,Pi},PlotStyle->{Thickness[0.01],Blue}],ParametricPlot3D[{r[Pi/4,v]},{v,0,2Pi},PlotStyle->{Thickness[0.01],Red}], 
+Graphics3D[{Thickness[.01],Arrow[{r[Pi/4,-Pi/4],r[Pi/4,-Pi/4]+0.5(D[r[u,-Pi/4],u]/.u->Pi/4)}]}],
+
+Graphics3D[{Thickness[.01],Arrow[{r[Pi/4,-Pi/4],r[Pi/4,-Pi/4]-.7Cross[(D[r[Pi/4,v],v]/.v->-Pi/4),(D[r[u,-Pi/4],u]/.u->Pi/4)]}]}],Graphics3D[{Thickness[.01],Arrow[{r[Pi/4,-Pi/4],r[Pi/4,-Pi/4]+0.5(D[r[Pi/4,v],v]/.v->-Pi/4)}]}],
+
+Boxed->False,ViewPoint->{2,-7,3}]
+Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.6/plane.jpeg",v1]
+Out[576]= 
+Out[577]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.6/plane.jpeg
+
+In[520]:= r[Pi/4,-Pi/4]+0.5(D[r[u,Pi/4],u]/.u->-Pi/4)
+Out[520]= {0.75,-0.25,1.06066}
+In[519]:= {0.75`,0.75`,0.35355339059327373`}D[r[u,-Pi/4],u]/.u->Pi/4
+Out[519]= {0.375,-0.375,-0.25}
+In[511]:= 
+D[r[u,Pi/4],u]/.u->Pi/4
+Out[511]= {1/2,1/2,-(1/Sqrt[2])}
+In[506]:= {0.75`,0.75`,0.35355339059327373`}
+r[Pi/4,Pi/4]
+In[512]:= {0.75`,0.75`,0.35355339059327373`}+{1/2,1/2,-(1/Sqrt[2])}
+Out[512]= {1.25,1.25,-0.353553}
+In[513]:= Graphics3D[Arrow[{{0.75,0.75,0.35355339059327373},{1.25`,1.25`,-0.35355339059327373`}}]]
+Out[513]= 

@@ -1,0 +1,984 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     42016,        976]
+NotebookOptionsPosition[     40391,        914]
+NotebookOutlinePosition[     40750,        930]
+CellTagsIndexPosition[     40707,        927]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Visualizing the Divergence", "Title",
+ CellChangeTimes->{{3.7167321829982843`*^9, 3.716732189382959*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["A vector field with positive divergence:", "Section",
+ CellChangeTimes->{{3.696135750493388*^9, 3.696135764754883*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"p", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", "x"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"q", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", "y"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Div", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"p", "[", 
+      RowBox[{"x", ",", "y"}], "]"}], ",", 
+     RowBox[{"q", "[", 
+      RowBox[{"x", ",", "y"}], "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.696133658061158*^9, 3.696133660922097*^9}, {
+  3.696133932921969*^9, 3.6961339587685833`*^9}, {3.6961340156201*^9, 
+  3.69613403228437*^9}, {3.696135546760232*^9, 3.696135554359769*^9}}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.696135560822526*^9, 3.7167320308123703`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"v1", "=", 
+   RowBox[{"VectorPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"p", "[", 
+         RowBox[{"x", ",", "y"}], "]"}], ",", 
+        RowBox[{"q", "[", 
+         RowBox[{"x", ",", "y"}], "]"}]}], "}"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "3"}], ",", "10"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+     RowBox[{"PlotTheme", "\[Rule]", "\"\<Web\>\""}], ",", 
+     RowBox[{"VectorPoints", "\[Rule]", "Coarse"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{
+     RowBox[{"ParametricPlot", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["E", "s"], 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"r", "*", 
+             RowBox[{"Cos", "[", "t", "]"}]}]}], ")"}]}], ",", 
+         RowBox[{
+          SuperscriptBox["E", "s"], 
+          RowBox[{"(", 
+           RowBox[{"2", "r", "*", 
+            RowBox[{"Sin", "[", "t", "]"}]}], ")"}]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"r", ",", "0", ",", 
+         RowBox[{"1", "/", "2"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{"2", "Pi"}]}], "}"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "3"}], ",", "10"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "7"}], ",", "7"}], "}"}]}], "}"}]}], ",", 
+       RowBox[{"PlotTheme", "\[Rule]", "\"\<Scientific\>\""}]}], "]"}], ",", 
+     "v1"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "0", ",", "3"}], "}"}]}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.696135104339533*^9, 3.696135106815124*^9}, {
+  3.6961351396622963`*^9, 3.696135195323928*^9}, {3.6961352393979397`*^9, 
+  3.69613526747281*^9}, {3.696135318083911*^9, 3.696135429810796*^9}, {
+  3.69613549315263*^9, 3.696135508117449*^9}, {3.696135592622374*^9, 
+  3.696135595172831*^9}, {3.696136657349296*^9, 3.696136696275329*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`s$$ = 1.065, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`s$$], 0, 3}}, Typeset`size$$ = {360., {188., 193.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`s$45033$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`s$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`s$$, $CellContext`s$45033$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        ParametricPlot[{
+         E^$CellContext`s$$ (1 + $CellContext`r Cos[$CellContext`t]), 
+          E^$CellContext`s$$ (2 $CellContext`r 
+           Sin[$CellContext`t])}, {$CellContext`r, 0, 1/2}, {$CellContext`t, 
+          0, 2 Pi}, PlotRange -> {{-3, 10}, {-7, 7}}, PlotTheme -> 
+         "Scientific"], $CellContext`v1], 
+      "Specifications" :> {{$CellContext`s$$, 0, 3}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {233., 239.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.696135197068755*^9, {3.696135256006117*^9, 3.696135267985322*^9}, {
+   3.696135319198476*^9, 3.6961354311938457`*^9}, 3.69613639288167*^9, {
+   3.696136670649376*^9, 3.696136696833202*^9}, 3.716732037227721*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["A vector field with negative divergence:", "Section",
+ CellChangeTimes->{{3.6961351230132008`*^9, 3.696135151276452*^9}, {
+  3.696135734810285*^9, 3.6961357480031557`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"p1", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+   RowBox[{"-", "x"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"q1", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+   RowBox[{"-", "y"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Div", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"p1", "[", 
+      RowBox[{"x", ",", "y"}], "]"}], ",", 
+     RowBox[{"q1", "[", 
+      RowBox[{"x", ",", "y"}], "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6961341462017803`*^9, 3.696134176283413*^9}, {
+  3.696134248182397*^9, 3.696134260184535*^9}, {3.6961343972986813`*^9, 
+  3.696134534740761*^9}, {3.696134591522794*^9, 3.696134640690713*^9}, {
+  3.696135081240777*^9, 3.696135092932136*^9}, {3.696135488252273*^9, 
+  3.696135506494862*^9}, {3.696135598757976*^9, 3.6961356595433893`*^9}, {
+  3.696136754926482*^9, 3.696136770117927*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", "2"}]], "Output",
+ CellChangeTimes->{
+  3.696135668357745*^9, {3.696136759383006*^9, 3.6961367707458143`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"v2", "=", 
+   RowBox[{"VectorPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"p1", "[", 
+         RowBox[{"x", ",", "y"}], "]"}], ",", 
+        RowBox[{"q1", "[", 
+         RowBox[{"x", ",", "y"}], "]"}]}], "}"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+     RowBox[{"PlotTheme", "\[Rule]", "\"\<Web\>\""}], ",", 
+     RowBox[{"VectorPoints", "\[Rule]", "Coarse"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{
+     RowBox[{"ParametricPlot", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["E", 
+           RowBox[{"-", "s"}]], 
+          RowBox[{"(", 
+           RowBox[{"6", "+", 
+            RowBox[{"2", "r", "*", 
+             RowBox[{"Cos", "[", "t", "]"}]}]}], ")"}]}], ",", 
+         RowBox[{
+          SuperscriptBox["E", 
+           RowBox[{"-", "s"}]], 
+          RowBox[{"(", 
+           RowBox[{"5", "r", "*", 
+            RowBox[{"Sin", "[", "t", "]"}]}], ")"}]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"r", ",", "0", ",", 
+         RowBox[{"1", "/", "2"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{"2", "Pi"}]}], "}"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "7"}], ",", "7"}], "}"}]}], "}"}]}], ",", 
+       RowBox[{"PlotTheme", "\[Rule]", "\"\<Scientific\>\""}]}], "]"}], ",", 
+     "v2"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "0", ",", "3"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6961356494208593`*^9, 3.696135707937333*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`s$$ = 2.65, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`s$$], 0, 3}}, Typeset`size$$ = {166., {42., 47.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`s$72707$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`s$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`s$$, $CellContext`s$72707$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        ParametricPlot[{
+         E^(-$CellContext`s$$) (6 + (2 $CellContext`r) Cos[$CellContext`t]), 
+          E^(-$CellContext`s$$) ((5 $CellContext`r) 
+           Sin[$CellContext`t])}, {$CellContext`r, 0, 1/2}, {$CellContext`t, 
+          0, 2 Pi}, PlotRange -> {{-7, 7}, {-7, 7}}, PlotTheme -> 
+         "Scientific"], $CellContext`v2], 
+      "Specifications" :> {{$CellContext`s$$, 0, 3}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{247., {87., 93.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.696135688585371*^9, 3.696135709651099*^9}, {
+  3.696136763162918*^9, 3.6961367731812477`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Show","gcomb",
+   "\"Could not combine the graphics objects in \
+\\!\\(\\*RowBox[{\\\"Show\\\", \\\"[\\\", \
+RowBox[{GraphicsBox[GraphicsComplexBox[List[List[0.4239072783625776`, 0.`], \
+List[0.4289537935811797`, 0.`], List[0.43400030879978185`, 0.`], \
+List[0.4390468240183839`, 0.`], List[0.444093339236986`, 0.`], \
+List[0.44913985445558813`, 0.`], List[0.4541863696741903`, 0.`], \
+List[0.45923288489279235`, 0.`], List[0.46427940011139446`, 0.`], \
+List[0.46932591532999657`, 0.`], List[0.47437243054859873`, 0.`], \
+List[0.47941894576720084`, 0.`], List[0.4844654609858029`, 0.`], \
+List[0.489511976204405`, 0.`], List[0.4945584914230072`, 0.`], \
+List[0.4239072783625776`, 0.`], List[0.42845403146593386`, \
+0.005474002231401865`], List[0.43300078456929014`, 0.01094800446280373`], \
+List[0.4375475376726464`, 0.0164220066942056`], List[0.44209429077600265`, \
+0.02189600892560746`], List[0.44664104387935893`, 0.027370011157009325`], \
+List[0.4511877969827152`, 0.03284401338841119`], List[0.4557345500860715`, \
+0.03831801561981306`], List[0.4602813031894278`, 0.043792017851214914`], \
+List[0.46482805629278406`, 0.04926602008261678`], List[0.4693748093961403`, \
+0.054740022314018644`], List[0.4739215624994966`, 0.06021402454542051`], \
+List[0.47846831560285286`, 0.06568802677682238`], List[0.48301506870620914`, \
+0.07116202900822423`], List[0.4875618218095654`, 0.07663603123962613`], \
+List[0.4239072783625776`, 0.`], List[0.4270537291363009`, \
+0.00986381118664291`], List[0.43020017991002424`, 0.01972762237328582`], \
+List[0.43334663068374757`, 0.029591433559928732`], List[0.4364930814574709`, \
+0.03945524474657164`], List[0.4396395322311941`, 0.049319055933214555`], \
+List[0.44278598300491745`, 0.05918286711985745`], List[0.4459324337786408`, \
+0.06904667830650037`], List[0.4490788845523641`, 0.07891048949314326`], \
+List[0.45222533532608744`, 0.08877430067978617`], List[0.45537178609981077`, \
+0.09863811186642907`], List[0.458518236873534`, 0.10850192305307199`], \
+List[0.4616646876472573`, 0.1183657342397149`], List[0.46481113842098065`, \
+0.1282295454263578`], List[0.467957589194704`, 0.13809335661300076`], \
+List[0.4239072783625776`, 0.`], List[0.4250302336422457`, \
+0.012299971364663893`], List[0.42615318892191373`, 0.024599942729327785`], \
+List[0.42727614420158183`, 0.03689991409399169`], List[0.42839909948125`, \
+0.04919988545865557`], Skeleton[3199]], List[List[List[EdgeForm[], \
+Directive[FaceForm[Skeleton[1]], RGBColor[Skeleton[3]], \
+AbsoluteThickness[Skeleton[1]], Opacity[Skeleton[1]]], \
+GraphicsGroupBox[TagBox[Skeleton[2], Function[Annotation[Slot[1], \
+Skeleton[2]]]]]], List[], List[], List[], List[]], \
+List[List[Directive[RGBColor[Skeleton[3]], AbsoluteThickness[Skeleton[1]]], \
+LineBox[List[Skeleton[225]]]]]]], List[Rule[DisplayFunction, Identity], \
+Rule[Axes, List[False, False]], Rule[AxesLabel, List[None, None]], \
+Rule[AxesOrigin, List[Automatic, Automatic]], RuleDelayed[DisplayFunction, \
+Identity], Rule[Frame, List[List[True, True], List[True, True]]], \
+Rule[FrameLabel, List[List[None, None], List[None, None]]], Rule[FrameStyle, \
+Automatic], Rule[FrameTicks, List[List[Automatic, Automatic], List[Automatic, \
+Automatic]]], Rule[GridLines, List[List[0], List[0]]], Rule[GridLinesStyle, \
+Directive[GrayLevel[0.5`, 0.4`]]], Rule[LabelStyle, List[Rule[FontFamily, \
+\\\"Times\\\"]]], Rule[Method, List[Rule[\\\"ScalingFunctions\\\", None], \
+Rule[\\\"TransparentPolygonMesh\\\", True], Rule[\\\"AxesInFront\\\", \
+True]]], Rule[PlotRange, List[List[-7, 7], List[-7, 7]]], \
+Rule[PlotRangeClipping, True], Rule[PlotRangePadding, List[List[0, 0], \
+List[0, 0]]], Rule[Ticks, List[Automatic, Automatic]]]], \\\",\\\", \
+\\\"v2\\\"}], \\\"]\\\"}]\\).\"",2,81,311,20986182709395849851,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.71673203783811*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Show","gcomb",
+   "\"Could not combine the graphics objects in \
+\\!\\(\\*RowBox[{\\\"Show\\\", \\\"[\\\", \
+RowBox[{GraphicsBox[GraphicsComplexBox[List[List[0.4239072783625776`, 0.`], \
+List[0.4289537935811797`, 0.`], List[0.43400030879978185`, 0.`], \
+List[0.4390468240183839`, 0.`], List[0.444093339236986`, 0.`], \
+List[0.44913985445558813`, 0.`], List[0.4541863696741903`, 0.`], \
+List[0.45923288489279235`, 0.`], List[0.46427940011139446`, 0.`], \
+List[0.46932591532999657`, 0.`], List[0.47437243054859873`, 0.`], \
+List[0.47941894576720084`, 0.`], List[0.4844654609858029`, 0.`], \
+List[0.489511976204405`, 0.`], List[0.4945584914230072`, 0.`], \
+List[0.4239072783625776`, 0.`], List[0.42845403146593386`, \
+0.005474002231401865`], List[0.43300078456929014`, 0.01094800446280373`], \
+List[0.4375475376726464`, 0.0164220066942056`], List[0.44209429077600265`, \
+0.02189600892560746`], List[0.44664104387935893`, 0.027370011157009325`], \
+List[0.4511877969827152`, 0.03284401338841119`], List[0.4557345500860715`, \
+0.03831801561981306`], List[0.4602813031894278`, 0.043792017851214914`], \
+List[0.46482805629278406`, 0.04926602008261678`], List[0.4693748093961403`, \
+0.054740022314018644`], List[0.4739215624994966`, 0.06021402454542051`], \
+List[0.47846831560285286`, 0.06568802677682238`], List[0.48301506870620914`, \
+0.07116202900822423`], List[0.4875618218095654`, 0.07663603123962613`], \
+List[0.4239072783625776`, 0.`], List[0.4270537291363009`, \
+0.00986381118664291`], List[0.43020017991002424`, 0.01972762237328582`], \
+List[0.43334663068374757`, 0.029591433559928732`], List[0.4364930814574709`, \
+0.03945524474657164`], List[0.4396395322311941`, 0.049319055933214555`], \
+List[0.44278598300491745`, 0.05918286711985745`], List[0.4459324337786408`, \
+0.06904667830650037`], List[0.4490788845523641`, 0.07891048949314326`], \
+List[0.45222533532608744`, 0.08877430067978617`], List[0.45537178609981077`, \
+0.09863811186642907`], List[0.458518236873534`, 0.10850192305307199`], \
+List[0.4616646876472573`, 0.1183657342397149`], List[0.46481113842098065`, \
+0.1282295454263578`], List[0.467957589194704`, 0.13809335661300076`], \
+List[0.4239072783625776`, 0.`], List[0.4250302336422457`, \
+0.012299971364663893`], List[0.42615318892191373`, 0.024599942729327785`], \
+List[0.42727614420158183`, 0.03689991409399169`], List[0.42839909948125`, \
+0.04919988545865557`], Skeleton[3199]], List[List[List[EdgeForm[], \
+Directive[FaceForm[Skeleton[1]], RGBColor[Skeleton[3]], \
+AbsoluteThickness[Skeleton[1]], Opacity[Skeleton[1]]], \
+GraphicsGroupBox[TagBox[Skeleton[2], Function[Annotation[Slot[1], \
+Skeleton[2]]]]]], List[], List[], List[], List[]], \
+List[List[Directive[RGBColor[Skeleton[3]], AbsoluteThickness[Skeleton[1]]], \
+LineBox[List[Skeleton[225]]]]]]], List[Rule[DisplayFunction, Identity], \
+Rule[Axes, List[False, False]], Rule[AxesLabel, List[None, None]], \
+Rule[AxesOrigin, List[Automatic, Automatic]], RuleDelayed[DisplayFunction, \
+Identity], Rule[Frame, List[List[True, True], List[True, True]]], \
+Rule[FrameLabel, List[List[None, None], List[None, None]]], Rule[FrameStyle, \
+Automatic], Rule[FrameTicks, List[List[Automatic, Automatic], List[Automatic, \
+Automatic]]], Rule[GridLines, List[List[0], List[0]]], Rule[GridLinesStyle, \
+Directive[GrayLevel[0.5`, 0.4`]]], Rule[LabelStyle, List[Rule[FontFamily, \
+\\\"Times\\\"]]], Rule[Method, List[Rule[\\\"ScalingFunctions\\\", None], \
+Rule[\\\"TransparentPolygonMesh\\\", True], Rule[\\\"AxesInFront\\\", \
+True]]], Rule[PlotRange, List[List[-7, 7], List[-7, 7]]], \
+Rule[PlotRangeClipping, True], Rule[PlotRangePadding, List[List[0, 0], \
+List[0, 0]]], Rule[Ticks, List[Automatic, Automatic]]]], \\\",\\\", \
+\\\"v2\\\"}], \\\"]\\\"}]\\).\"",2,97,315,20986182709395849851,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.71673311865971*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Show","gcomb",
+   "\"Could not combine the graphics objects in \
+\\!\\(\\*RowBox[{\\\"Show\\\", \\\"[\\\", \
+RowBox[{GraphicsBox[GraphicsComplexBox[List[List[0.4239072783625776`, 0.`], \
+List[0.4289537935811797`, 0.`], List[0.43400030879978185`, 0.`], \
+List[0.4390468240183839`, 0.`], List[0.444093339236986`, 0.`], \
+List[0.44913985445558813`, 0.`], List[0.4541863696741903`, 0.`], \
+List[0.45923288489279235`, 0.`], List[0.46427940011139446`, 0.`], \
+List[0.46932591532999657`, 0.`], List[0.47437243054859873`, 0.`], \
+List[0.47941894576720084`, 0.`], List[0.4844654609858029`, 0.`], \
+List[0.489511976204405`, 0.`], List[0.4945584914230072`, 0.`], \
+List[0.4239072783625776`, 0.`], List[0.42845403146593386`, \
+0.005474002231401865`], List[0.43300078456929014`, 0.01094800446280373`], \
+List[0.4375475376726464`, 0.0164220066942056`], List[0.44209429077600265`, \
+0.02189600892560746`], List[0.44664104387935893`, 0.027370011157009325`], \
+List[0.4511877969827152`, 0.03284401338841119`], List[0.4557345500860715`, \
+0.03831801561981306`], List[0.4602813031894278`, 0.043792017851214914`], \
+List[0.46482805629278406`, 0.04926602008261678`], List[0.4693748093961403`, \
+0.054740022314018644`], List[0.4739215624994966`, 0.06021402454542051`], \
+List[0.47846831560285286`, 0.06568802677682238`], List[0.48301506870620914`, \
+0.07116202900822423`], List[0.4875618218095654`, 0.07663603123962613`], \
+List[0.4239072783625776`, 0.`], List[0.4270537291363009`, \
+0.00986381118664291`], List[0.43020017991002424`, 0.01972762237328582`], \
+List[0.43334663068374757`, 0.029591433559928732`], List[0.4364930814574709`, \
+0.03945524474657164`], List[0.4396395322311941`, 0.049319055933214555`], \
+List[0.44278598300491745`, 0.05918286711985745`], List[0.4459324337786408`, \
+0.06904667830650037`], List[0.4490788845523641`, 0.07891048949314326`], \
+List[0.45222533532608744`, 0.08877430067978617`], List[0.45537178609981077`, \
+0.09863811186642907`], List[0.458518236873534`, 0.10850192305307199`], \
+List[0.4616646876472573`, 0.1183657342397149`], List[0.46481113842098065`, \
+0.1282295454263578`], List[0.467957589194704`, 0.13809335661300076`], \
+List[0.4239072783625776`, 0.`], List[0.4250302336422457`, \
+0.012299971364663893`], List[0.42615318892191373`, 0.024599942729327785`], \
+List[0.42727614420158183`, 0.03689991409399169`], List[0.42839909948125`, \
+0.04919988545865557`], Skeleton[3199]], List[List[List[EdgeForm[], \
+Directive[FaceForm[Skeleton[1]], RGBColor[Skeleton[3]], \
+AbsoluteThickness[Skeleton[1]], Opacity[Skeleton[1]]], \
+GraphicsGroupBox[TagBox[Skeleton[2], Function[Annotation[Slot[1], \
+Skeleton[2]]]]]], List[], List[], List[], List[]], \
+List[List[Directive[RGBColor[Skeleton[3]], AbsoluteThickness[Skeleton[1]]], \
+LineBox[List[Skeleton[225]]]]]]], List[Rule[DisplayFunction, Identity], \
+Rule[Axes, List[False, False]], Rule[AxesLabel, List[None, None]], \
+Rule[AxesOrigin, List[Automatic, Automatic]], RuleDelayed[DisplayFunction, \
+Identity], Rule[Frame, List[List[True, True], List[True, True]]], \
+Rule[FrameLabel, List[List[None, None], List[None, None]]], Rule[FrameStyle, \
+Automatic], Rule[FrameTicks, List[List[Automatic, Automatic], List[Automatic, \
+Automatic]]], Rule[GridLines, List[List[0], List[0]]], Rule[GridLinesStyle, \
+Directive[GrayLevel[0.5`, 0.4`]]], Rule[LabelStyle, List[Rule[FontFamily, \
+\\\"Times\\\"]]], Rule[Method, List[Rule[\\\"ScalingFunctions\\\", None], \
+Rule[\\\"TransparentPolygonMesh\\\", True], Rule[\\\"AxesInFront\\\", \
+True]]], Rule[PlotRange, List[List[-7, 7], List[-7, 7]]], \
+Rule[PlotRangeClipping, True], Rule[PlotRangePadding, List[List[0, 0], \
+List[0, 0]]], Rule[Ticks, List[Automatic, Automatic]]]], \\\",\\\", \
+\\\"v2\\\"}], \\\"]\\\"}]\\).\"",2,203,316,20986182709395849851,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.716733602942092*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["A vector field with divergence 0.", "Section",
+ CellChangeTimes->{{3.6961357709185667`*^9, 3.696135788318569*^9}, 
+   3.716732161093377*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"p2", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+   RowBox[{"-", "y"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"q2", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+   RowBox[{"-", "x"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Div", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"p2", "[", 
+      RowBox[{"x", ",", "y"}], "]"}], ",", 
+     RowBox[{"q2", "[", 
+      RowBox[{"x", ",", "y"}], "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6961341462017803`*^9, 3.696134176283413*^9}, {
+  3.696134248182397*^9, 3.696134260184535*^9}, {3.6961343972986813`*^9, 
+  3.696134534740761*^9}, {3.696134591522794*^9, 3.696134640690713*^9}, {
+  3.696135081240777*^9, 3.696135092932136*^9}, {3.696135488252273*^9, 
+  3.696135506494862*^9}, {3.696135598757976*^9, 3.6961356595433893`*^9}, {
+  3.696135790803134*^9, 3.696135819123251*^9}}],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.696135668357745*^9, 3.6961358227720833`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"v3", "=", 
+   RowBox[{"VectorPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"p2", "[", 
+         RowBox[{"x", ",", "y"}], "]"}], ",", 
+        RowBox[{"q2", "[", 
+         RowBox[{"x", ",", "y"}], "]"}]}], "}"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+     RowBox[{"PlotTheme", "\[Rule]", "\"\<Web\>\""}], ",", 
+     RowBox[{"VectorPoints", "\[Rule]", "Coarse"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{
+     RowBox[{"ParametricPlot", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             FractionBox[
+              SuperscriptBox["\[ExponentialE]", 
+               RowBox[{"-", "s"}]], "2"], "+", 
+             FractionBox[
+              SuperscriptBox["\[ExponentialE]", "s"], "2"]}], ")"}], 
+           RowBox[{"(", 
+            RowBox[{"6", "+", 
+             RowBox[{"2", "r", "*", 
+              RowBox[{"Cos", "[", "t", "]"}]}]}], ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             FractionBox[
+              SuperscriptBox["\[ExponentialE]", 
+               RowBox[{"-", "s"}]], "2"], "-", 
+             FractionBox[
+              SuperscriptBox["\[ExponentialE]", "s"], "2"]}], ")"}], 
+           RowBox[{"(", 
+            RowBox[{"6", "+", 
+             RowBox[{"5", "r", "*", 
+              RowBox[{"Sin", "[", "t", "]"}]}]}], ")"}]}]}], ",", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             FractionBox[
+              SuperscriptBox["\[ExponentialE]", 
+               RowBox[{"-", "s"}]], "2"], "-", 
+             FractionBox[
+              SuperscriptBox["\[ExponentialE]", "s"], "2"]}], ")"}], 
+           RowBox[{"(", 
+            RowBox[{"6", "+", 
+             RowBox[{"2", "r", "*", 
+              RowBox[{"Cos", "[", "t", "]"}]}]}], ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             FractionBox[
+              SuperscriptBox["\[ExponentialE]", 
+               RowBox[{"-", "s"}]], "2"], "+", 
+             FractionBox[
+              SuperscriptBox["\[ExponentialE]", "s"], "2"]}], ")"}], 
+           RowBox[{"(", 
+            RowBox[{"6", "+", 
+             RowBox[{"5", "r", "*", 
+              RowBox[{"Sin", "[", "t", "]"}]}]}], ")"}]}]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"r", ",", "0", ",", 
+         RowBox[{"1", "/", "2"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{"2", "Pi"}]}], "}"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "7"}], ",", "7"}], "}"}]}], "}"}]}], ",", 
+       RowBox[{"PlotTheme", "\[Rule]", "\"\<Scientific\>\""}]}], "]"}], ",", 
+     "v3"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "0", ",", "3"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.696135833908626*^9, 3.696135836010276*^9}, {
+  3.6961358986372013`*^9, 3.696135899133062*^9}, {3.6961362691795692`*^9, 
+  3.696136329266968*^9}, {3.6961367966993027`*^9, 3.696136802234651*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`s$$ = 3., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`s$$], 0, 3}}, Typeset`size$$ = {166., {42., 47.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`s$73615$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`s$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`s$$, $CellContext`s$73615$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        ParametricPlot[{(E^(-$CellContext`s$$)/2 + E^$CellContext`s$$/2) (
+            6 + (2 $CellContext`r) Cos[$CellContext`t]) + (
+            E^(-$CellContext`s$$)/2 - E^$CellContext`s$$/2) (
+            6 + (5 $CellContext`r) Sin[$CellContext`t]), (
+            E^(-$CellContext`s$$)/2 - E^$CellContext`s$$/2) (
+            6 + (2 $CellContext`r) Cos[$CellContext`t]) + (
+            E^(-$CellContext`s$$)/2 + E^$CellContext`s$$/2) (
+            6 + (5 $CellContext`r) Sin[$CellContext`t])}, {$CellContext`r, 0, 
+          1/2}, {$CellContext`t, 0, 2 Pi}, PlotRange -> {{-7, 7}, {-7, 7}}, 
+         PlotTheme -> "Scientific"], $CellContext`v3], 
+      "Specifications" :> {{$CellContext`s$$, 0, 3}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{247., {87., 93.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.696135837151753*^9, 3.6961358999811563`*^9, 
+  3.6961363302123938`*^9, 3.696136803091487*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Show","gcomb",
+   "\"Could not combine the graphics objects in \
+\\!\\(\\*RowBox[{\\\"Show\\\", \\\"[\\\", \
+RowBox[{GraphicsBox[GraphicsComplexBox[List[List[0.2987224102071764`, \
+0.2987224102071764`], List[1.0178411241912997`, -0.41684008460781286`], \
+List[1.73695983817543`, -1.1324025794228163`], List[2.4560785521595534`, \
+-1.8479650742378055`], List[3.1751972661436767`, -2.5635275690527948`], \
+List[3.894315980127807`, -3.279090063867784`], List[4.6134346941119375`, \
+-3.9946525586827804`], List[5.332553408096054`, -4.71021505349777`], \
+List[6.051672122080184`, -5.425777548312759`], List[6.7707908360643`, \
+-6.141340043127762`], List[7.489909550048445`, -6.8569025379427515`], \
+List[8.209028264032561`, -7.572465032757741`], List[8.928146978016692`, \
+-8.28802752757273`], List[9.647265692000808`, -9.003590022387733`], \
+List[10.366384405984938`, -9.719152517202723`], List[0.2987224102071764`, \
+0.2987224102071764`], List[0.17044865677635812`, 0.4340576705723862`], \
+List[0.042174903345532755`, 0.569392930937596`], List[-0.0860988500852855`, \
+0.7047281913028058`], List[-0.21437260351611798`, 0.8400634516680228`], \
+List[-0.34264635694693624`, 0.9753987120332397`], List[-0.4709201103777474`, \
+1.1107339723984424`], List[-0.5991938638085799`, 1.2460692327636593`], \
+List[-0.7274676172393981`, 1.381404493128855`], List[-0.8557413706702164`, \
+1.516739753494079`], List[-0.9840151241010489`, 1.652075013859303`], \
+List[-1.1122888775318671`, 1.7874102742244986`], List[-1.2405626309626854`, \
+1.9227455345897084`], List[-1.3688363843935178`, 2.0580807949549325`], \
+List[-1.497110137824336`, 2.193416055320128`], List[0.2987224102071764`, \
+0.2987224102071764`], List[-0.6515376205972672`, 1.2581506176592114`], \
+List[-1.601797651401725`, 2.2175788251112536`], List[-2.5520576822061614`, \
+3.1770070325632958`], List[-3.502317713010612`, 4.136435240015324`], \
+List[-4.452577743815077`, 5.095863447467387`], List[-5.402837774619513`, \
+6.055291654919415`], List[-6.353097805423978`, 7.014719862371464`], \
+List[-7.303357836228422`, 7.974148069823492`], List[-8.253617867032872`, \
+8.933576277275534`], List[-9.203877897837316`, 9.893004484727555`], \
+List[-10.154137928641774`, 10.852432692179619`], List[-11.104397959446217`, \
+11.811860899631654`], List[-12.054657990250675`, 12.771289107083689`], \
+List[-13.004918021055133`, 13.730717314535738`], List[0.2987224102071764`, \
+0.2987224102071764`], List[-1.2853132446956081`, 1.892217041645388`], \
+List[-2.8693488995984`, 3.4857116730835997`], List[-4.453384554501177`, \
+5.079206304521826`], List[-6.037420209403955`, 6.672700935960023`], \
+Skeleton[3199]], List[List[List[EdgeForm[], Directive[FaceForm[Skeleton[1]], \
+RGBColor[Skeleton[3]], AbsoluteThickness[Skeleton[1]], Opacity[Skeleton[1]]], \
+GraphicsGroupBox[TagBox[Skeleton[2], Function[Annotation[Slot[1], \
+Skeleton[2]]]]]], List[], List[], List[], List[]], \
+List[List[Directive[RGBColor[Skeleton[3]], AbsoluteThickness[Skeleton[1]]], \
+LineBox[List[Skeleton[225]]]]]]], List[Rule[DisplayFunction, Identity], \
+Rule[Axes, List[False, False]], Rule[AxesLabel, List[None, None]], \
+Rule[AxesOrigin, List[Automatic, Automatic]], RuleDelayed[DisplayFunction, \
+Identity], Rule[Frame, List[List[True, True], List[True, True]]], \
+Rule[FrameLabel, List[List[None, None], List[None, None]]], Rule[FrameStyle, \
+Automatic], Rule[FrameTicks, List[List[Automatic, Automatic], List[Automatic, \
+Automatic]]], Rule[GridLines, List[List[0], List[0]]], Rule[GridLinesStyle, \
+Directive[GrayLevel[0.5`, 0.4`]]], Rule[LabelStyle, List[Rule[FontFamily, \
+\\\"Times\\\"]]], Rule[Method, List[Rule[\\\"ScalingFunctions\\\", None], \
+Rule[\\\"TransparentPolygonMesh\\\", True], Rule[\\\"AxesInFront\\\", \
+True]]], Rule[PlotRange, List[List[-7, 7], List[-7, 7]]], \
+Rule[PlotRangeClipping, True], Rule[PlotRangePadding, List[List[0, 0], \
+List[0, 0]]], Rule[Ticks, List[Automatic, Automatic]]]], \\\",\\\", \
+\\\"v3\\\"}], \\\"]\\\"}]\\).\"",2,81,312,20986182709395849851,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7167321579084663`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  StyleBox[
+   RowBox[{
+   "Another", " ", "vector", " ", "field", " ", "with", " ", "divergence", 
+    " ", "0."}], "Text"]}]], "Input",
+ CellChangeTimes->{{3.696136452752584*^9, 3.696136465864092*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"p3", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+   RowBox[{"-", "y"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"q3", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", "x"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Div", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"p3", "[", 
+      RowBox[{"x", ",", "y"}], "]"}], ",", 
+     RowBox[{"q3", "[", 
+      RowBox[{"x", ",", "y"}], "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.696136480259543*^9, 3.6961364881696987`*^9}, {
+  3.696136615681603*^9, 3.69613661942318*^9}}],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{3.696136491140573*^9, 3.696136620967723*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"v4", "=", 
+   RowBox[{"VectorPlot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"p3", "[", 
+         RowBox[{"x", ",", "y"}], "]"}], ",", 
+        RowBox[{"q3", "[", 
+         RowBox[{"x", ",", "y"}], "]"}]}], "}"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+     RowBox[{"PlotTheme", "\[Rule]", "\"\<Web\>\""}], ",", 
+     RowBox[{"VectorPoints", "\[Rule]", "Coarse"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{
+     RowBox[{"ParametricPlot", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"Cos", "[", "s", "]"}], 
+           RowBox[{"(", 
+            RowBox[{"4", "+", 
+             RowBox[{"2", "r", "*", 
+              RowBox[{"Cos", "[", "t", "]"}]}]}], ")"}]}], "-", 
+          RowBox[{
+           RowBox[{"Sin", "[", "s", "]"}], 
+           RowBox[{"(", 
+            RowBox[{"5", "r", "*", 
+             RowBox[{"Sin", "[", "t", "]"}]}], ")"}]}]}], ",", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Sin", "[", "s", "]"}], 
+           RowBox[{"(", 
+            RowBox[{"4", "+", 
+             RowBox[{"2", "r", "*", 
+              RowBox[{"Cos", "[", "t", "]"}]}]}], ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"Cos", "[", "s", "]"}], 
+           RowBox[{"(", 
+            RowBox[{"5", "r", "*", 
+             RowBox[{"Sin", "[", "t", "]"}]}], ")"}]}]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"r", ",", "0", ",", 
+         RowBox[{"1", "/", "2"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", "0", ",", 
+         RowBox[{"2", "Pi"}]}], "}"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "7"}], ",", "7"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "7"}], ",", "7"}], "}"}]}], "}"}]}], ",", 
+       RowBox[{"PlotTheme", "\[Rule]", "\"\<Scientific\>\""}]}], "]"}], ",", 
+     "v4"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"s", ",", "0", ",", "3"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.696135833908626*^9, 3.696135836010276*^9}, {
+  3.6961358986372013`*^9, 3.696135899133062*^9}, {3.6961362691795692`*^9, 
+  3.696136329266968*^9}, {3.6961365053522377`*^9, 3.696136604350657*^9}, {
+  3.696136822750657*^9, 3.696136827952519*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`s$$ = 3., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`s$$], 0, 3}}, Typeset`size$$ = {360., {177., 182.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`s$75043$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`s$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`s$$, $CellContext`s$75043$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        ParametricPlot[{
+         Cos[$CellContext`s$$] (4 + (2 $CellContext`r) Cos[$CellContext`t]) - 
+          Sin[$CellContext`s$$] ((5 $CellContext`r) Sin[$CellContext`t]), 
+          Sin[$CellContext`s$$] (4 + (2 $CellContext`r) Cos[$CellContext`t]) + 
+          Cos[$CellContext`s$$] ((5 $CellContext`r) 
+            Sin[$CellContext`t])}, {$CellContext`r, 0, 1/2}, {$CellContext`t, 
+          0, 2 Pi}, PlotRange -> {{-7, 7}, {-7, 7}}, PlotTheme -> 
+         "Scientific"], $CellContext`v4], 
+      "Specifications" :> {{$CellContext`s$$, 0, 3}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {222., 228.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.696136533170463*^9, 3.696136542951858*^9}, {
+   3.696136578699568*^9, 3.696136624902277*^9}, 3.69613682862252*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1147, 724},
+WindowMargins->{{Automatic, 31}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 111, 1, 92, "Title"],
+Cell[CellGroupData[{
+Cell[716, 27, 125, 1, 64, "Section"],
+Cell[CellGroupData[{
+Cell[866, 32, 740, 22, 75, "Input"],
+Cell[1609, 56, 94, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1740, 62, 2311, 64, 123, "Input"],
+Cell[4054, 128, 2061, 41, 489, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6164, 175, 178, 2, 64, "Section"],
+Cell[CellGroupData[{
+Cell[6367, 181, 979, 26, 75, "Input"],
+Cell[7349, 209, 138, 3, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7524, 217, 2056, 61, 102, "Input"],
+Cell[9583, 280, 1948, 39, 197, "Output"],
+Cell[11534, 321, 3878, 57, 99, "Message"],
+Cell[15415, 380, 3878, 57, 99, "Message"],
+Cell[19296, 439, 3880, 57, 99, "Message"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23225, 502, 146, 2, 64, "Section"],
+Cell[CellGroupData[{
+Cell[23396, 508, 979, 26, 75, "Input"],
+Cell[24378, 536, 94, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24509, 542, 3574, 100, 134, "Input"],
+Cell[28086, 644, 2252, 43, 197, "Output"],
+Cell[30341, 689, 4119, 59, 99, "Message"]
+}, Open  ]],
+Cell[34475, 751, 250, 6, 54, "Input"],
+Cell[CellGroupData[{
+Cell[34750, 761, 670, 22, 75, "Input"],
+Cell[35423, 785, 92, 1, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35552, 791, 2669, 75, 96, "Input"],
+Cell[38224, 868, 2127, 41, 467, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

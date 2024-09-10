@@ -1,0 +1,45 @@
+In[130]:= v1=ParametricPlot3D[{2Sin[u]*Cos[v],4Sin[u]*Sin[v],4Cos[u]},{u,0,π},
+{v,0,2π},ViewPoint->{-4,4,4}]
+Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Handout2/ellipsoid.jpeg",v1]
+Out[130]= 
+Out[131]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Handout2/ellipsoid.jpeg
+
+In[142]:= v2=ParametricPlot3D[{u,v,u^2-v^2},{u,-1,1},
+{v,-1,1},RegionFunction->Function[{x,y,z},(x)^2+(y)^2<=1],ViewPoint->{4,4,5}]
+Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Handout2/saddle.jpeg",v2]
+Out[142]= 
+Out[143]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Handout2/saddle.jpeg
+In[150]:= v3=ParametricPlot3D[{Cos[u],v,2Sin[u]},{u,0,π},
+{v,-2,2},ViewPoint->{4,4,5}]
+Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Handout2/cylinder.jpeg",v3]
+Out[150]= 
+Out[151]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Handout2/cylinder.jpeg
+In[444]:= x0=3;
+y0=3;
+z0=2.3;
+size=21;
+viewpoint={7,-6,5};
+v=2.5;
+AxesShow=Show[Table[Graphics3D[Arrow[{{0,0,0},v}]],{v,{{x0,0,0},{0,y0,0},{0,0,z0}}}],Graphics3D[Text[Style["x",FontFamily->"Georgia",FontSize->size],{x0,0,0.3}]],
+Graphics3D[Text[Style["z",FontFamily->"Georgia",FontSize->size],{0,0,z0+0.3}]],
+Graphics3D[Text[Style["y",FontFamily->"Georgia",FontSize->size],{0,y0,0.3}]],Boxed->False,ViewPoint->viewpoint];
+v4=Show[AxesShow,ParametricPlot3D[{(+1+Sin[v+3Pi/2])Cos[u],v,(1+Sin[v+3Pi/2])Sin[u]},{u,0,2Pi},{v,0,5},PlotStyle->{Opacity[0.7]}],
+ParametricPlot3D[{0,v,(1+Sin[v+3Pi/2])},{v,0,5},PlotStyle->{Thickness[.015],Black}],
+ParametricPlot3D[{(+1+Sin[v+3Pi/2])Cos[u],v,(1+Sin[v+3Pi/2])Sin[u]},{u,0,2Pi},PlotStyle->{Thickness[.014],Red,Dashed}],
+Graphics3D[Text[Style["z=1+Sin(y+(3π)/2)",FontFamily->"Georgia",FontSize->15],{0,v+.5,2.6}]]
+]
+Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Handout2/onion.jpeg",v4]
+
+Out[451]= 
+Out[452]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Handout2/onion.jpeg
+
+Out[262]= 
+In[454]:= Manipulate[ParametricPlot3D[{(a+b*Cos[v])Cos[u],(a+b*Cos[v])Sin[u],Sin[v]},{v,0,2π},{u,0,2π}],{a,0,4},{b,0,4}]
+Out[454]= Manipulate[ParametricPlot3D[{(a + b*Cos[v])*Cos[u], (a + b*Cos[v])*Sin[u], 
+    Sin[v]}, {v, 0, 2*Pi}, {u, 0, 2*Pi}], {a, 0, 4}, {b, 0, 4}]
+In[473]:= a=4;
+b=2;
+v5=ParametricPlot3D[{(a+b*Cos[v])Cos[u],(a+b*Cos[v])Sin[u],b*Sin[v]},{v,0,2π},{u,0,2π}]
+Out[475]= 
+In[476]:= Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Handout2/torus.jpeg",v5]
+Out[476]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/Handout2/torus.jpeg

@@ -1,0 +1,18 @@
+In[29]:= A=VectorPlot3D[{{-y,x,0}},{x,-1,1},{y,-1,1},{z,-1,1},VectorPoints->Coarse,VectorScale->.1]
+Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.5/curly.jpeg",A]
+Out[29]= 
+Out[30]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.5/curly.jpeg
+In[7]:= Curl[{-y,x,0},{x,y,z}]
+Out[7]= {0,0,2}
+
+In[27]:= B=VectorPlot3D[{{1,1,0}},{x,-1,1},{y,-1,1},{z,-1,1},VectorPoints->Coarse,VectorScale->.1]
+Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.5/noncurly.jpeg",B]
+Out[27]= 
+Out[28]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.5/noncurly.jpeg
+In[35]:= 
+Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.5/posdiv.jpeg",VectorPlot[{{x,y}},{x,-1,1},{y,-1,1}]]
+Out[35]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.5/posdiv.jpeg
+In[39]:= Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.5/negdiv.jpeg",VectorPlot[{{-x,-y}},{x,-1,1},{y,-1,1}]]
+Out[39]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.5/negdiv.jpeg
+In[38]:= Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.5/zerdiv.jpeg",VectorPlot[{{1,1}},{x,-1,1},{y,-1,1}]]
+Out[38]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.5/zerdiv.jpeg

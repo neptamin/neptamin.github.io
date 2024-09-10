@@ -1,0 +1,645 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     23570,        635]
+NotebookOptionsPosition[     22778,        602]
+NotebookOutlinePosition[     23139,        618]
+CellTagsIndexPosition[     23096,        615]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Visualizing Spherical Coordinates ", "Section",
+ CellChangeTimes->{
+  3.716500893216341*^9, {3.716502651487179*^9, 3.716502668475924*^9}, 
+   3.7165027191620903`*^9, {3.7165044549641848`*^9, 3.716504486845441*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Click somewhere on each piece of code and press Shift+Enter to evaluate\
+\>", "Subsection",
+ CellChangeTimes->{{3.716504490768613*^9, 3.7165045358332453`*^9}}],
+
+Cell[BoxData[Cell[TextData[{
+  "1. The surface corresponding to constant ",
+  Cell[BoxData[
+   FormBox[
+    RowBox[{"\[Rho]", "=", "3."}], TraditionalForm]]]
+ }], "Text",
+  CellChangeTimes->{{3.716502729994681*^9, 3.716502772016509*^9}}]], "Text",
+ CellChangeTimes->{{3.716503523926776*^9, 3.716503539319414*^9}, {
+  3.716504435385969*^9, 3.716504436427184*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Rho]", "=", "3"}], ";"}], "\n", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"4", ",", "0", ",", "0"}], "}"}]}], "}"}], "]"}], "]"}], 
+     ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"x", ",", 
+          RowBox[{"FontFamily", "\[Rule]", 
+           RowBox[{"Al", " ", "Bayan"}]}], ",", 
+          RowBox[{"FontSize", "\[Rule]", "24"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"4", ",", "0", ",", "0.3"}], "}"}]}], "]"}], "]"}], ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "4", ",", "0"}], "}"}]}], "}"}], "]"}], "]"}], 
+     ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"y", ",", 
+          RowBox[{"FontFamily", "\[Rule]", 
+           RowBox[{"Al", " ", "Bayan"}]}], ",", 
+          RowBox[{"FontSize", "\[Rule]", "24"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "4", ",", "0.3"}], "}"}]}], "]"}], "]"}], ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "4"}], "}"}]}], "}"}], "]"}], "]"}], 
+     ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"z", ",", 
+          RowBox[{"FontFamily", "\[Rule]", 
+           RowBox[{"Al", " ", "Bayan"}]}], ",", 
+          RowBox[{"FontSize", "\[Rule]", "24"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", 
+          RowBox[{"4", "+", "0.3"}]}], "}"}]}], "]"}], "]"}], ",", 
+     RowBox[{"ParametricPlot3D", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Rho]", "*", 
+          RowBox[{"Sin", "[", "\[Phi]", "]"}], 
+          RowBox[{"Cos", "[", "\[Theta]", "]"}]}], ",", 
+         RowBox[{"\[Rho]", "*", 
+          RowBox[{"Sin", "[", "\[Phi]", "]"}], 
+          RowBox[{"Sin", "[", "\[Theta]", "]"}]}], ",", 
+         RowBox[{"\[Rho]", "*", " ", 
+          RowBox[{"Cos", "[", "\[Phi]", "]"}]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\[Theta]", ",", "0", ",", "\[CapitalTheta]"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\[Phi]", ",", "0", ",", "\[CapitalPhi]"}], "}"}]}], "]"}], 
+     ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "}"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[CapitalTheta]", ",", "0.1", ",", 
+     RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[CapitalPhi]", ",", "0.1", ",", "\[Pi]"}], "}"}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.7165040469298286`*^9, 3.716504050583848*^9}, {
+  3.7165042152704763`*^9, 3.716504219142125*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[CapitalTheta]$$ = 
+    0.1, $CellContext`\[CapitalPhi]$$ = 0.1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`\[CapitalTheta]$$], 0.1, 2 Pi}, {
+      Hold[$CellContext`\[CapitalPhi]$$], 0.1, Pi}}, Typeset`size$$ = {
+    360., {193., 198.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`\[CapitalTheta]$32992$$ = 
+    0, $CellContext`\[CapitalPhi]$32993$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`\[CapitalTheta]$$ = 
+        0.1, $CellContext`\[CapitalPhi]$$ = 0.1}, "ControllerVariables" :> {
+        Hold[$CellContext`\[CapitalTheta]$$, \
+$CellContext`\[CapitalTheta]$32992$$, 0], 
+        Hold[$CellContext`\[CapitalPhi]$$, $CellContext`\[CapitalPhi]$32993$$,
+          0]}, "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Graphics3D[
+         Arrow[{{0, 0, 0}, {4, 0, 0}}]], 
+        Graphics3D[
+         Text[
+          
+          Style[$CellContext`x, 
+           FontFamily -> $CellContext`Al $CellContext`Bayan, FontSize -> 
+           24], {4, 0, 0.3}]], 
+        Graphics3D[
+         Arrow[{{0, 0, 0}, {0, 4, 0}}]], 
+        Graphics3D[
+         Text[
+          
+          Style[$CellContext`y, 
+           FontFamily -> $CellContext`Al $CellContext`Bayan, FontSize -> 
+           24], {0, 4, 0.3}]], 
+        Graphics3D[
+         Arrow[{{0, 0, 0}, {0, 0, 4}}]], 
+        Graphics3D[
+         Text[
+          
+          Style[$CellContext`z, 
+           FontFamily -> $CellContext`Al $CellContext`Bayan, FontSize -> 
+           24], {0, 0, 4 + 0.3}]], 
+        ParametricPlot3D[{$CellContext`\[Rho] Sin[$CellContext`\[Phi]] 
+          Cos[$CellContext`\[Theta]], $CellContext`\[Rho] 
+          Sin[$CellContext`\[Phi]] 
+          Sin[$CellContext`\[Theta]], $CellContext`\[Rho] 
+          Cos[$CellContext`\[Phi]]}, {$CellContext`\[Theta], 
+          0, $CellContext`\[CapitalTheta]$$}, {$CellContext`\[Phi], 
+          0, $CellContext`\[CapitalPhi]$$}], 
+        PlotRange -> {{-5, 5}, {-5, 5}, {-5, 5}}], 
+      "Specifications" :> {{$CellContext`\[CapitalTheta]$$, 0.1, 2 
+         Pi}, {$CellContext`\[CapitalPhi]$$, 0.1, Pi}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {252., 258.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.716504053618874*^9, 3.716504221806775*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Theta]", "=", 
+   RowBox[{"\[Pi]", "/", "3"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"4", ",", "0", ",", "0"}], "}"}]}], "}"}], "]"}], "]"}], 
+     ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"x", ",", 
+          RowBox[{"FontFamily", "\[Rule]", 
+           RowBox[{"Al", " ", "Bayan"}]}], ",", 
+          RowBox[{"FontSize", "\[Rule]", "24"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"4", ",", "0", ",", "0.3"}], "}"}]}], "]"}], "]"}], ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "4", ",", "0"}], "}"}]}], "}"}], "]"}], "]"}], 
+     ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"y", ",", 
+          RowBox[{"FontFamily", "\[Rule]", 
+           RowBox[{"Al", " ", "Bayan"}]}], ",", 
+          RowBox[{"FontSize", "\[Rule]", "24"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "4", ",", "0.3"}], "}"}]}], "]"}], "]"}], ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "4"}], "}"}]}], "}"}], "]"}], "]"}], 
+     ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"z", ",", 
+          RowBox[{"FontFamily", "\[Rule]", 
+           RowBox[{"Al", " ", "Bayan"}]}], ",", 
+          RowBox[{"FontSize", "\[Rule]", "24"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", ".3", ",", "4"}], "}"}]}], "]"}], "]"}], ",", 
+     RowBox[{"ParametricPlot3D", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Rho]", "*", 
+          RowBox[{"Sin", "[", "\[Phi]", "]"}], 
+          RowBox[{"Cos", "[", "\[Theta]", "]"}]}], ",", 
+         RowBox[{"\[Rho]", "*", 
+          RowBox[{"Sin", "[", "\[Phi]", "]"}], 
+          RowBox[{"Sin", "[", "\[Theta]", "]"}]}], ",", 
+         RowBox[{"\[Rho]", "*", " ", 
+          RowBox[{"Cos", "[", "\[Phi]", "]"}]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\[Phi]", ",", "0", ",", "\[CapitalPhi]"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\[Rho]", ",", "0", ",", "\[CapitalRho]"}], "}"}]}], "]"}], 
+     ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "}"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[CapitalPhi]", ",", "0.1", ",", "\[Pi]"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[CapitalRho]", ",", "0.1", ",", "15"}], "}"}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.7165008157243023`*^9, 3.7165010509271393`*^9}, {
+  3.7165010887325697`*^9, 3.716501112318337*^9}, {3.716502711884048*^9, 
+  3.716502726663001*^9}, {3.7165033023629313`*^9, 3.7165033087541122`*^9}, {
+  3.7165040882401648`*^9, 3.716504199206209*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[CapitalRho]$$ = 
+    1.9200000000000002`, $CellContext`\[CapitalPhi]$$ = 2.1986989309769576`, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`\[CapitalPhi]$$], 0.1, Pi}, {
+      Hold[$CellContext`\[CapitalRho]$$], 0.1, 15}}, Typeset`size$$ = {
+    360., {193., 198.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`\[CapitalPhi]$32195$$ = 
+    0, $CellContext`\[CapitalRho]$32196$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`\[CapitalRho]$$ = 
+        0.1, $CellContext`\[CapitalPhi]$$ = 0.1}, "ControllerVariables" :> {
+        Hold[$CellContext`\[CapitalPhi]$$, $CellContext`\[CapitalPhi]$32195$$,
+          0], 
+        Hold[$CellContext`\[CapitalRho]$$, $CellContext`\[CapitalRho]$32196$$,
+          0]}, "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Graphics3D[
+         Arrow[{{0, 0, 0}, {4, 0, 0}}]], 
+        Graphics3D[
+         Text[
+          
+          Style[$CellContext`x, 
+           FontFamily -> $CellContext`Al $CellContext`Bayan, FontSize -> 
+           24], {4, 0, 0.3}]], 
+        Graphics3D[
+         Arrow[{{0, 0, 0}, {0, 4, 0}}]], 
+        Graphics3D[
+         Text[
+          
+          Style[$CellContext`y, 
+           FontFamily -> $CellContext`Al $CellContext`Bayan, FontSize -> 
+           24], {0, 4, 0.3}]], 
+        Graphics3D[
+         Arrow[{{0, 0, 0}, {0, 0, 4}}]], 
+        Graphics3D[
+         Text[
+          
+          Style[$CellContext`z, 
+           FontFamily -> $CellContext`Al $CellContext`Bayan, FontSize -> 
+           24], {0, 0.3, 4}]], 
+        ParametricPlot3D[{$CellContext`\[Rho] Sin[$CellContext`\[Phi]] 
+          Cos[$CellContext`\[Theta]], $CellContext`\[Rho] 
+          Sin[$CellContext`\[Phi]] 
+          Sin[$CellContext`\[Theta]], $CellContext`\[Rho] 
+          Cos[$CellContext`\[Phi]]}, {$CellContext`\[Phi], 
+          0, $CellContext`\[CapitalPhi]$$}, {$CellContext`\[Rho], 
+          0, $CellContext`\[CapitalRho]$$}], 
+        PlotRange -> {{-5, 5}, {-5, 5}, {-5, 5}}], 
+      "Specifications" :> {{$CellContext`\[CapitalPhi]$$, 0.1, 
+         Pi}, {$CellContext`\[CapitalRho]$$, 0.1, 15}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {252., 258.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.716504149355076*^9, 3.716504199555129*^9}]
+}, Open  ]],
+
+Cell[BoxData[Cell[TextData[{
+  "\n3. The surface corresponding to constant ",
+  Cell[BoxData[
+   FormBox[
+    RowBox[{"\[Phi]", "=", 
+     RowBox[{
+      FractionBox["\[Pi]", "3"], "."}]}], TraditionalForm]]]
+ }], "Text",
+  CellChangeTimes->{{3.716502729994681*^9, 3.716502772016509*^9}}]], "Text",
+ CellChangeTimes->{{3.716502790646205*^9, 3.716502825938356*^9}, {
+  3.716503581033133*^9, 3.71650358134592*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Phi]", "=", 
+   RowBox[{"2", 
+    RowBox[{"\[Pi]", "/", "3"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Show", "[", 
+    RowBox[{
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"4", ",", "0", ",", "0"}], "}"}]}], "}"}], "]"}], "]"}], 
+     ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"x", ",", 
+          RowBox[{"FontFamily", "\[Rule]", 
+           RowBox[{"Al", " ", "Bayan"}]}], ",", 
+          RowBox[{"FontSize", "\[Rule]", "24"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"4", ",", "0", ",", "0.3"}], "}"}]}], "]"}], "]"}], ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "4", ",", "0"}], "}"}]}], "}"}], "]"}], "]"}], 
+     ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"y", ",", 
+          RowBox[{"FontFamily", "\[Rule]", 
+           RowBox[{"Al", " ", "Bayan"}]}], ",", 
+          RowBox[{"FontSize", "\[Rule]", "24"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "4", ",", "0.3"}], "}"}]}], "]"}], "]"}], ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "4"}], "}"}]}], "}"}], "]"}], "]"}], 
+     ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"z", ",", 
+          RowBox[{"FontFamily", "\[Rule]", 
+           RowBox[{"Al", " ", "Bayan"}]}], ",", 
+          RowBox[{"FontSize", "\[Rule]", "24"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", ".3", ",", "4"}], "}"}]}], "]"}], "]"}], ",", 
+     RowBox[{"ParametricPlot3D", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Rho]", "*", 
+          RowBox[{"Sin", "[", "\[Phi]", "]"}], 
+          RowBox[{"Cos", "[", "\[Theta]", "]"}]}], ",", 
+         RowBox[{"\[Rho]", "*", 
+          RowBox[{"Sin", "[", "\[Phi]", "]"}], 
+          RowBox[{"Sin", "[", "\[Theta]", "]"}]}], ",", 
+         RowBox[{"\[Rho]", "*", " ", 
+          RowBox[{"Cos", "[", "\[Phi]", "]"}]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\[Theta]", ",", "0", ",", "\[CapitalTheta]"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\[Rho]", ",", "0", ",", "\[CapitalRho]"}], "}"}]}], "]"}], 
+     ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "}"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[CapitalTheta]", ",", "0.1", ",", 
+     RowBox[{"2", "\[Pi]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[CapitalRho]", ",", "0.1", ",", "15"}], "}"}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.716501148547961*^9, 3.716501170532872*^9}, 
+   3.71650123345508*^9, {3.716502566362571*^9, 3.716502568854476*^9}, {
+   3.716503206572456*^9, 3.716503271243622*^9}, {3.716504236076182*^9, 
+   3.7165042776978416`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`\[CapitalTheta]$$ = 
+    6.283185307179586, $CellContext`\[CapitalRho]$$ = 7.359999999999999, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`\[CapitalTheta]$$], 0.1, 2 Pi}, {
+      Hold[$CellContext`\[CapitalRho]$$], 0.1, 15}}, Typeset`size$$ = {
+    360., {193., 198.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`\[CapitalTheta]$35939$$ = 
+    0, $CellContext`\[CapitalRho]$35940$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`\[CapitalTheta]$$ = 
+        0.1, $CellContext`\[CapitalRho]$$ = 0.1}, "ControllerVariables" :> {
+        Hold[$CellContext`\[CapitalTheta]$$, \
+$CellContext`\[CapitalTheta]$35939$$, 0], 
+        Hold[$CellContext`\[CapitalRho]$$, $CellContext`\[CapitalRho]$35940$$,
+          0]}, "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Graphics3D[
+         Arrow[{{0, 0, 0}, {4, 0, 0}}]], 
+        Graphics3D[
+         Text[
+          
+          Style[$CellContext`x, 
+           FontFamily -> $CellContext`Al $CellContext`Bayan, FontSize -> 
+           24], {4, 0, 0.3}]], 
+        Graphics3D[
+         Arrow[{{0, 0, 0}, {0, 4, 0}}]], 
+        Graphics3D[
+         Text[
+          
+          Style[$CellContext`y, 
+           FontFamily -> $CellContext`Al $CellContext`Bayan, FontSize -> 
+           24], {0, 4, 0.3}]], 
+        Graphics3D[
+         Arrow[{{0, 0, 0}, {0, 0, 4}}]], 
+        Graphics3D[
+         Text[
+          
+          Style[$CellContext`z, 
+           FontFamily -> $CellContext`Al $CellContext`Bayan, FontSize -> 
+           24], {0, 0.3, 4}]], 
+        ParametricPlot3D[{$CellContext`\[Rho] Sin[$CellContext`\[Phi]] 
+          Cos[$CellContext`\[Theta]], $CellContext`\[Rho] 
+          Sin[$CellContext`\[Phi]] 
+          Sin[$CellContext`\[Theta]], $CellContext`\[Rho] 
+          Cos[$CellContext`\[Phi]]}, {$CellContext`\[Theta], 
+          0, $CellContext`\[CapitalTheta]$$}, {$CellContext`\[Rho], 
+          0, $CellContext`\[CapitalRho]$$}], 
+        PlotRange -> {{-5, 5}, {-5, 5}, {-5, 5}}], 
+      "Specifications" :> {{$CellContext`\[CapitalTheta]$$, 0.1, 2 
+         Pi}, {$CellContext`\[CapitalRho]$$, 0.1, 15}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {252., 258.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.716501178606059*^9, 3.7165012341238413`*^9, 3.716502569861907*^9, {
+   3.7165032248732777`*^9, 3.7165032731276817`*^9}, {3.716504239274136*^9, 
+   3.716504278757818*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 624},
+WindowMargins->{{223, Automatic}, {-50, Automatic}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 220, 3, 64, "Section"],
+Cell[CellGroupData[{
+Cell[825, 29, 169, 3, 44, "Subsection"],
+Cell[997, 34, 362, 8, 35, "Text"],
+Cell[CellGroupData[{
+Cell[1384, 46, 3611, 101, 201, "Input"],
+Cell[4998, 149, 3189, 71, 527, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8224, 225, 3748, 102, 201, "Input"],
+Cell[11975, 329, 3203, 71, 527, "Output"]
+}, Open  ]],
+Cell[15193, 403, 412, 10, 58, "Text"],
+Cell[CellGroupData[{
+Cell[15630, 417, 3761, 104, 201, "Input"],
+Cell[19394, 523, 3344, 74, 527, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

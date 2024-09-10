@@ -1,0 +1,234 @@
+% \DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\des}{des}
+\DeclareMathOperator{\Des}{Des}
+% \DeclareMathOperator{\inv}{inv}
+\DeclareMathOperator{\Inv}{inv}
+\DeclareMathOperator{\maj}{maj}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\GL}{GL}
+% \DeclareMathOperator{\Mat}{Mat}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bB}{\mathbb{B}}
+% \newcommand{\bP}{\mathbb{P}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bT}{\mathbb{T}}
+\newcommand{\bS}{\mathbb{S}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bZ}{\mathbb{Z}}
+\newcommand{\fg}{\mathfrak{g}}
+\newcommand{\fh}{\mathfrak{h}}
+\newcommand{\fH}{\mathfrak{H}}
+\newcommand{\fX}{\mathfrak{X}}
+\newcommand{\fS}{\mathfrak{S}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\mbf}[1]{\mathbf{#1}}
+\newcommand{\markeq}[1]{\addtocounter{equation}{1}
+  \tag{\theequation}\label{#1}}
+\newcommand{\too}[1]{\stackrel{#1}{\to}}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\bD}{\mathbb{D}}
+\newcommand{\DD}{\mathbb{D}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\B}{\mathbb{B}}
+\renewcommand{\H}{\mathbb{H}}
+\newcommand{\HH}{\mathbb{H}}
+\newcommand{\K}{\kappa}
+\renewcommand{\S}{\mathbb{S}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\RP}{\R\P}
+\newcommand{\CP}{\C\P}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+% \newtheorem{lemma}[thm]{Lemma}
+% \newtheorem{proposition}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{fact}[thm]{Fact}
+
+
+%\if@amsmath
+%\realias\choose\binom
+%\else
+\renewcommand{\choose}[2]{{{#1}\atopwithdelims(){#2}}}
+% \fi
+
+
+\newcommand{\mchoose}[2]{%
+  \mathchoice%
+    {\left(\kern-0.48em\choose{#1}{#2}\kern-0.48em\right)}
+    {\left(\kern-0.30em\choose{\smash{#1}}{\smash{#2}}\kern-0.30em\right)}
+    {\left(\kern-0.30em\choose{\smash{#1}}{\smash{#2}}\kern-0.30em\right)}
+    {\left(\kern-0.30em\choose{\smash{#1}}{\smash{#2}}\kern-0.30em\right)}
+}
+
+\newcommand{\cy}[2]{{{#1}\atopwithdelims[]{#2}}}
+\newcommand{\Stir}[2]{{{#1}\atopwithdelims\{\}{#2}}}
+\newcommand{\pa}[1]{{\left( {#1}\right)}}
+\newcommand{\ov}[1]{{ \f{1}{ {#1} } }}
+\newcommand{\pder}[1]{\frac{\partial}{\partial{#1}}}
+\newcommand{\Pder}[2]{\frac{\partial{#1}}{\partial{#2}}}
+\newcommand{\der}[1]{\frac{\md}{\md{#1}}}
+% \newcommand{\Matrix}[4]{{\begin{pmatrix} {#1} & {#2} \\ {#3} & {#4} \end{pmatrix}}} ???
+
+
+\newcommand{\sA}{\mathscr{A}}
+\newcommand{\sP}{\mathscr{P}}
+\newcommand{\sC}{\mathscr{C}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sG}{\mathscr{G}}
+\newcommand{\sF}{\mathscr{F}}
+\newcommand{\sT}{\mathscr{T}}
+\newcommand{\sO}{\mathscr{O}}
+\newcommand{\sV}{\mathscr{V}}
+\newcommand{\Or}{\qquad \text{ or} \qquad}
+\newcommand{\gb}{ \qquad \text{given by} \qquad }
+\newcommand{\2}{\sqrt{2}}
+\newcommand{\Ph}{\Phi}
+\newcommand{\num}{\#}
+\newcommand{\ch}{\choose}
+\newcommand{\el}{\ell}
+\newcommand{\un}{\underline}
+\newcommand{\mch}{\mchoose}
+\newcommand{\D}{\Delta}
+\newcommand{\s}{\sigma}
+\newcommand{\lp}{\left(}
+\newcommand{\rp}{\right)}
+\newcommand{\ti}{\e}
+\newcommand{\nck}{\ch{n}{k}}
+\newcommand{\nmck}{\mchoose{n}{k}}
+% \newcommand{\cd}{\cdot}
+\newcommand{\dd}{\cdot}
+\newcommand{\cds}{\cdots}
+\newcommand{\TA}{\Theta}
+\newcommand{\imp}{\implies}
+\newcommand{\sq}{\sqrt}
+\newcommand{\sms}{\smallskip}
+\newcommand{\ms}{\medskip}
+\newcommand{\bs}{\bigskip}
+\newcommand{\npg}{\newpage}
+\newcommand{\noi}{\noindent}
+% \newcommand{\ov}{\over}
+\newcommand{\fa}{\text{ for all }}
+\newcommand{\fs}{\text{ for some } }
+\newcommand{\fj}{ \f{1}{j} }
+\newcommand{\fhj}{ \f{h}{j} }
+\newcommand{\zj}{ \left[0, \f{1}{j} \right] }
+\newcommand{\zhj}{ \left[0, \f{h}{j} \right] }
+\newcommand{\al}{\alpha}
+\newcommand{\w}{\omega}
+\newcommand{\va}{\varphi}
+\newcommand{\f}{\frac}
+\newcommand{\n}{\f{1}{n}}
+\newcommand{\lam}{\lambda}
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\sL}{\mathcal{L}}
+\newcommand{\ibf}{ \text{ is a basis for } }
+\newcommand{\ha}{\f{1}{2}}
+\newcommand{\e}{\epsilon}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\de}{\delta}
+\newcommand{\ze}{\zeta}
+\newcommand{\p}{\partial}
+\newcommand{\8}{\infty}
+\newcommand{\ta}{\theta}
+\newcommand{\g}{\gamma}
+\newcommand{\y}{\gamma}
+\renewcommand{\t}{\tau}
+\renewcommand{\s}{\sigma}
+\newcommand{\si}{\sigma}
+\newcommand{\Si}{\Sigma}
+\newcommand{\Om}{\Omega}
+\newcommand{\G}{\Gamma}
+\newcommand{\be}{\beta}
+\newcommand{\tr}{\triangle}
+\newcommand{\md}{{\mathrm d}}
+\newcommand{\IR}{\int_{\R^n}}
+\newcommand{\tx}{\text}
+\newcommand{\st}{\star}
+\newcommand{\std}{\tx{std}}
+\newcommand{\LL}{\tx{LL}}
+
+\newcommand{\sm}{\setminus}
+\newcommand{\es}{\emptyset}
+\newcommand{\sub}{\subset}
+\newcommand{\sube}{\subseteq}
+\newcommand{\ol}{\overline}
+\newcommand{\inv}{^{-1}}
+\newcommand{\x}{\times}
+\newcommand{\seq}[1]{\{ {#1}_n\}}
+\newcommand{\ds}{\displaystyle}
+% \newcommand{\mbf}{\mathbf}
+\renewcommand{\=}{&=&}
+\newcommand{\np}{\pagebreak}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\rar}{\rightarrow}
+\newcommand{\Lp}{\bigtriangleup}
+\newcommand{\Sn}{\sum_{n = 0}^\infty}
+
+\newcommand{\comb}{combinatorially}
+
+\newcommand{\lbar}[2]{\,\underset{#1}{ \overset{#2}{|} }\, }
+
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\rk}{rk}
+\DeclareMathOperator{\spann}{span}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\codim}{codim}
+\DeclareMathOperator{\Mod}{mod}
+\newcommand{\re}{\operatorname{Re}}
+\DeclareMathOperator{\Mat}{Mat}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Real}{Re}
+\DeclareMathOperator{\Imag}{Im}
+\DeclareMathOperator{\Crit}{Crit}
+\DeclareMathOperator{\IM}{Im}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Int}{Int}
+\DeclareMathOperator{\SSYT}{SSYT}
+\DeclareMathOperator{\wt}{wt}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\curl}{curl}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\Trig}{Trig}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\Alt}{Alt}
+\DeclareMathOperator{\ad}{ad}
+\DeclareMathOperator{\Ad}{Ad}
+\DeclareMathOperator{\inj}{int}
+
+
+\newcommand{\WT}{\widetilde}
+\newcommand{\gras}{G_k(\bR^n)}
+\newcommand{\stief}{V_k(\bR^n)}
+\newcommand{\mnk}{M(n\times k,\bR)}
+\newcommand{\mkk}{M(k\times k,\bR)}
+\newcommand{\trig}{\Trig(k\times k,\bR)}
+\newcommand{\tv}{\tilde{v}}
+\newcommand{\ts}{\tilde{s}}
+\newcommand{\pp}{\frac{\p}{\p\phi}}
+\newcommand{\pt}{\frac{\p}{\p\theta}}
+\DeclareMathOperator{\Lie}{Lie}
+\DeclareMathOperator{\II}{II}
+\newcommand{\sph}{\bS^{2n+1}}
+\newcommand{\proj}{\mathbb{CP}^{n}}
+\newcommand{\complex}{\bC^{2n+2}}
+
+

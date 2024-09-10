@@ -1,0 +1,25 @@
+
+
+
+
+In[69]:= f[x_,y_]:=2-.5(x-.5)^2-.4(y+1)^2
+ϵ=.1;
+v=Pi/12;
+T=Show[ParametricPlot3D[{Cos[t],Sin[t],f[Cos[t],Sin[t]]},{t,0,2Pi}],
+Table[ParametricPlot3D[{c+ϵ*Cos[t],d+ϵ*Sin[t],f[c+ϵ*Cos[t],d+ϵ*Sin[t]]},{t,0,2Pi},PlotStyle->Red],{c,-.8,.8,.25},{d,.2-Sqrt[1-c^2],-.15+Sqrt[1-c^2],.25}],
+Graphics3D[{Blue, Arrowheads[.05],Arrow[{{1,0,f[1,0]},{Cos[v],Sin[v],f[Cos[v],Sin[v]]}}]}],
+Plot3D[f[x,y],{x,-1,1},{y,-1,1},RegionFunction->Function[{x,y,z},x^2+y^2<=1],PlotStyle->{LightGray,Opacity[.3]}],
+Boxed->False
+]
+Out[72]= 
+In[355]:= t=-Pi/6;
+t2=Pi/6;
+r=-.01
+s=.02
+T2=Show[Table[Graphics3D[{Red,Arrowheads[.045],Arrow[{{c+ϵ*Cos[t],d+ϵ*Sin[t]+r,f[c+ϵ*Cos[t],d+ϵ*Sin[t]+r]},{c+ϵ*Cos[t2]+s,d+ϵ*Sin[t2],f[c+ϵ*Cos[t2]+s,d+ϵ*Sin[t2]]}}]}],{c,-.8,.8,.25},{d,.2-Sqrt[1-c^2],-.15+Sqrt[1-c^2],.25}]
+];
+Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.8/circulation.jpeg",
+Show[T,T2,Axes->False,ViewPoint->{2,5,7}]]
+Out[357]= -0.01
+Out[358]= 0.02
+Out[360]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.8/circulation.jpeg

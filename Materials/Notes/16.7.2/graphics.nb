@@ -1,0 +1,24 @@
+
+In[2]:= SetOptions[EvaluationNotebook[],Background->LightGray]
+v1=ParametricPlot3D[{r*Cos[t],r*Sin[t],r^2},{t,0,2Pi},{r,0,2+.1Sin[10t]},PlotPoints->350,PlotStyle->Gray,Mesh->None,Boxed->False]
+
+Out[18]= 
+During evaluation of In[18]:= Export::infer: Cannot infer format of file foil.jpeg
+.
+Out[19]= $Failed
+In[20]:= Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.7.2/foil.jpeg",v1]
+In[320]:= F[x_,y_,z_]:=Piecewise[{{0,1,0},y<3},{{-z,2+y,x},y>=3}]
+r2[x_,z_]:={x,3+(x-1)^2+z^2,z}
+top2[u_,v_]:=Cross[D[r2[x,v],x]/.x->u,D[r2[u,y],y]/.y->v]
+f2[s_,t_]:=r2[s,t]-.2*top2[s,t]
+t2=Show[ParametricPlot3D[r2[x,z],{x,0,1},{z,0,1},PlotStyle->Transparent],Table[Graphics3D[{Blue,Arrowheads[.03],Arrow[{r2[s,t],f2[s,t]}]}],{s,0,1,.3},{t,0,1,.3}]];
+s=Show[ParametricPlot3D[{x,0,z},{x,0,1},{z,0,1},PlotStyle->Transparent],ParametricPlot3D[{x,y,y-1},{x,0,1},{y,1,2},PlotStyle->Transparent],VectorPlot3D[{{0,1,0}},{x,-.5,1.5},{y,-.5,3},{z,-.5,1.5},VectorPoints->4,VectorStyle->Red,VectorScale->.05],
+VectorPlot3D[{{-(z-.5)(y-3),5,(x-.5)(y-3)}},{x,-.5,1.5},{y,3,4.5},{z,-.5,1.5},VectorPoints->4,VectorStyle->Red,VectorScale->.05],
+Graphics3D[{Blue,Arrowheads[.05],Arrow[{{.5,0,.5},{.5,.75,.5}}]}],Graphics3D[{Blue,Arrowheads[.05],Arrow[{{.5,1.5,.5},{.5,2,0}}]}],
+t2,
+PlotRange->All,Boxed->False,Axes->False,ViewPoint->{3,1.5,.6}]
+Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.7.2/stream.jpeg",s]
+Out[325]= 
+Out[326]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.7.2/stream.jpeg
+In[214]:= Integrate[Sin[2t],{t,0,Pi/2}]
+Out[214]= 1
