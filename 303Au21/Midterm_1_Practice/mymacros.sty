@@ -1,0 +1,190 @@
+
+
+% Margins
+ \setlength{\oddsidemargin}{0.3 in}
+ \setlength{\evensidemargin}{0.3 in}
+ \setlength{\textwidth}{6 in}
+ \setlength{\topmargin}{0 in}
+ \setlength{\textheight}{8.55 in}
+\setlength{\headheight}{0.18 in}
+
+% Packages  
+%\usepackage[margin=0.8 in]{geometry} % decides size of margins, paper etc
+%\usepackage{palatino} % a font
+\usepackage{hhline}
+%\usepackage{forest}
+\usepackage{cancel} % to cross out stuff
+\usepackage{amsmath}
+\usepackage{marginnote}  % to put notes on the margins
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{accents}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{enumerate}
+%\usepackage{verbatim}
+\usepackage{comment}
+%\usepackage{makeidx}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage[noadjust]{cite}
+\usepackage{color}
+\usepackage{pst-node}
+\usepackage{tikz-cd} 
+\usepackage[toc,page]{appendix}			% table of contents
+
+
+% Global options
+\allowdisplaybreaks
+\mathtoolsset{showonlyrefs}
+
+
+% Math Operators
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\pv}{pv}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Int}{int}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\sing}{sing}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\II}{II}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\adj}{adj}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\arcsinh}{arsinh}
+\DeclareMathOperator{\artanh}{artanh}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\arcosh}{arcosh}
+\DeclareMathOperator{\Diff}{Diff}
+
+%Special Characters
+\let \sectionsymbol \S
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\C}{\mathbb{C}}
+\renewcommand{\S}{\mathbb{S}}
+\renewcommand{\H}{\mathbb{H}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\pr}{\mathcal{p}\mathcal{r}}
+\newcommand{\ru}{{\sqrt{u}}}
+\newcommand{\SM}{\overline{S^*M}}
+\newcommand{\pdo}{\Psi\text{DO}}
+\newcommand{\ox}{\o{\xi}}
+\newcommand{\tM}{\tilde{M}}
+\newcommand{\tg}{\tilde{g}}
+\newcommand{\p}{\partial}
+\newcommand{\n}{\nabla}
+\newcommand{\on}{\overline{\n}}
+\newcommand{\tn}{\tilde{\nabla}}
+\newcommand{\oM}{\overline{M}}
+\newcommand{\tX}{\widetilde{X}}
+\newcommand{\ta}{{\widetilde{\alpha}}}
+\newcommand{\tx}{{\widetilde{x}}}
+\newcommand{\oX}{\overline{X}}
+\newcommand{\X}{\mathfrak{X}}
+\newcommand{\oW}{\overline{W}}
+\newcommand{\oT}{\overline{T}}
+\newcommand{\tf}{\tilde{f}}
+\newcommand{\tr}{\tilde{\r}}
+\newcommand{\x}{{x_c}}
+\newcommand{\oU}{\overline{U}}
+\newcommand{\oH}{\overline{H}}
+\newcommand{\oSU}{\o{S^*U}}
+\newcommand{\oSH}{\overline{S^*\mathbb{H}^2}}
+\newcommand{\rg}{\rangle}
+\renewcommand{\lg}{\langle}
+\newcommand{\bTM}{{}^bT^*\oM}
+\newcommand{\Di}{\Delta\iota}
+\newcommand{\hx}{\hat{\xi}}
+\newcommand{\ba}{\breve{a}}
+\newcommand{\tz}{\widetilde{\zeta}}
+\newcommand{\hY}{\hat{Y}}
+\newcommand{\tPhi}{\widetilde{\Phi}}
+\newcommand{\og}{\overline{\g}}
+\newcommand{\prl}{\parallel}
+\newcommand{\cM}{\mathring{M}}
+
+
+% Calligraphic letters
+
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calE}{\mathcal{E}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calG}{\mathcal{G}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calL}{\mathcal{L}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\calR}{\mathcal{R}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calU}{\mathcal{U}}
+\newcommand{\calV}{\mathcal{V}}
+\newcommand{\calW}{\mathcal{W}}
+\newcommand{\calY}{\mathcal{Y}}
+\newcommand{\calZ}{\mathcal{Z}}
+
+
+%Greek Letters
+
+\renewcommand{\a}{\alpha}
+\renewcommand{\b}{\beta}
+\newcommand{\g}{\gamma}
+\renewcommand{\d}{\delta}
+\let\epsilon\varepsilon
+\newcommand{\e}{\epsilon}
+\newcommand{\h}{\eta}
+\newcommand{\z}{\zeta}
+\newcommand{\smsec}{\G_0^{\frac{1}{2}}}
+\newcommand{\G}{\Gamma}
+\newcommand{\oG}{\overline{\Gamma}}
+\renewcommand{\r}{\rho}
+\renewcommand{\t}{\tau}
+\renewcommand{\k}{\kappa}
+\renewcommand{\l}{\lambda}
+\newcommand{\s}{\sigma}
+\renewcommand{\th}{\theta}
+\newcommand{\om}{\omega}
+\newcommand{\w}{\omega}
+\renewcommand{\oe}{\overline{\eta}}
+\newcommand{\tU}{\tilde{U}}
+
+% Environments
+
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{{Lemma}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{remark}{Remark}
+\newtheorem{corollary}{Corollary}
+\newtheorem{example}{Example}
+\newtheorem{ansatz}{Ansatz}
+\newtheorem{problem}{Problem}
+\newtheorem{question}{Question}
+\newenvironment{solution}{\paragraph{Solution:}}{\hfill$\square$}
+\newtheorem{goal}{Goal}
+\newtheorem{claim}{Claim}
+\newtheorem{idea_that_doesnt_work}{Idea that doesn't work}
+\newtheorem{unverified_claim}{Unverified Claim}
+\newenvironment{answer}{\paragraph{Answer:}}{\hfill$\square$}
+
+
+\let \o \undefined
+\def \o#1{\overline{#1}}
+\def\fr#1#2{\frac{#1}{#2}}
+\def\tt#1{\textit{#1}}
+
+% \let\printintex\undefined
+% \let\see\undefined
+
+\let\td\undefined
+\def \td#1{\widetilde{#1}}
+\let\implies\Rightarrow

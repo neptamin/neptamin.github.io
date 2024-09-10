@@ -1,0 +1,135 @@
+
+% Document settings
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{multirow}
+\usepackage{setspace}
+\pagestyle{plain}
+\usepackage{hyperref}
+%
+
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0em}
+%\renewcommand{\baselinestretch}{2.0}
+
+\begin{document}
+
+ \noindent\LARGE Math 324 Fall 2017 \\
+ \LARGE Advanced Multivariable Calculus \\
+ \large Section H: MWF 1:30-2:20 pm	CDH 139  \\
+
+\vspace{2mm}
+
+
+\noindent\large Instructor: Nikolas Eptaminitakis\\
+\large Email: neptamin@uw.edu \\
+%\large Course website:\url{} \\
+\large Office Hours: TBA
+\vspace{1mm}
+%\begin{center} A statement about the changeable nature of this syllabus. \\
+%\end{center}
+
+% Course details
+\textbf {\large \\ Course description and prerequisites}
+
+ The topics we will cover include Double and Triple Integrals, the Chain Rule, Directional Derivatives, Vector fields, Line and Surface integrals, the Grad, Curl and Div operators, the Divergence Theorem, and Green's and Stokes' Theorems. This course is a continuation of the 120 level calculus courses, and its content partly overlaps with material covered in Math 126.
+	
+	As for prerequisites, I will assume you are comfortable with basic differentiation and integration in one variable and basic algebraic manipulations. However, you shouldn't expect to have to deal with some really complicated integration tricks and I will be reviewing past material you might not remember whenever necessary.
+%\textbf {Prerequisite(s):} None.
+
+%\textbf {Note(s):} A minimum grade of C is required in this course to progress to COURSE. 
+
+%\textbf {Credit Hours:} 3 \\
+\vspace{1mm}
+\textbf {\large \\Textbook/Study resources}
+
+I will generally be following the \textbf{textbook} \emph{``Multivariable Calculus - Custom Edition (Early Transcendentals)''}, 7th Edition by James Stewart. We will cover part of chapter 14 and all of Chapters 15 and 16. Note that if you have another edition of this book, the chapters might be numbered differently.  I will also be posting my \textbf{notes} on the Canvas website, which may help you get an idea of what I have covered in case you missed a class.
+%Also, on the website you will find some excellent \textbf{review sheets} prepared by Dr. Andrew Loveless that provide a good summary of the material.
+ 
+ If you need to contact me via email, you can use the address provided above. I will try to respond within 24 hours. You are also strongly encouraged to form study groups. It can help you learn in a more efficient manner and clear up misconceptions. Another resource you might want to consider is CLUE, the free late-night study canter at Mary Gates Hall. You can find more information here: \begin{center}
+ \url{http://depts.washington.edu/aspuw/clue/home/}
+ \end{center}
+ 
+ 
+\vspace{1mm}
+\textbf{\large\\Homework}
+
+There will be homework assigned roughly once a week, and it will be submitted and graded through WebAssign. You will need a WebAssign access code, but if you have already purchased a Lifetime of the Edition access to WebAssign for the 7th edition of Calculus: Early Transcendentals of Stewart in Math 124-6, it should still work form Math 324. \textbf{I will not give individual extensions to homework assignments}. To make up for that, at the end I will add 10\% to your homework average score, up to 100\% (that is, 87\% will count as 97\% and 92\% will count as 100\%). 
+ 
+\vspace{1mm}
+\textbf{\large\\ Exams}
+
+There will be 2 midterms and a final. The midterms will take place in our regular classroom, on the following dates:\\
+\vspace{0.1 in}
+
+\noindent\textbf{Midterm 1:} Friday, October 20, 2017\\
+\textbf{Midterm 2:} Friday, November 17, 2017\\
+
+The final exam will be:\\
+\textbf{Monday, December 11, 2017, 2.30-4.20 pm, CDH 139}\\
+Note that the final exam date and time are assigned by the university and \textbf{cannot be changed}. \textbf{To pass this class, you will have to take the final exam}.
+
+\vspace{0.1 in}
+
+As per departmental policy, during all three exams you will be allowed a \textbf{TI 30X IIS calculator} and o\textbf{ne sheet of hand-written notes} (8.5x11 inches, double sided).
+\vspace{0.1 in}
+
+
+No make-up midterms will be given. If you have a documented and unavoidable reason to miss a midterm, I will give you a grade based on the median of the exam and your performance in the other two exams. Namely, for each of the two other exams I will calculate how many standard deviations away from the median you scored and average the two numbers. Then, if the resulting number is $x$, your grade for the exam you missed will be $x$ standard deviations away from the median of this exam. This formula will give a more fair result in case the level of difficulty in the various exams is not the same. In any case, if you need to miss an exam please inform me as soon as possible.
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ \vspace{1mm}
+\textbf {\large \\Worksheets} 
+
+There will be a number of worksheet sessions done in class. You are strongly encouraged to work on them in groups and you can turn in your solutions, which will not be
+graded, but I will look at them so I can point out common mistakes and misconceptions before
+the actual exams. Their purpose is to encourage you to discuss some problems
+with other people in class, ask questions, and write down a
+solution for some problems in a stress-free
+environment. You will be notified about worksheet sessions ahead of time.
+
+
+\vspace{1mm}
+\textbf{\large \\Mathematica tutorial}
+
+
+I will run a tutorial on Wolfram Mathematica, at a day and time that will be announced soon. Mathematica is a powerful symbolic computation program that can be used for computation of integrals both symbolically and numerically, differentiation, visualization of curves and surfaces etc. We will see how to use some commands that are relevant to the course. Participation to the tutorial is completely optional, it does not count towards your grade, and you will not be tested on anything related to it. Mathematica is provided for free by UW College of Engineering to UW students, and you can find it under this link: \url{https://www.engr.washington.edu/mycoe/computing/software/install_mathematica}. Feel free to let me know if you have trouble installing it.
+
+
+\vspace{1mm}
+
+\textbf {\large\\ Grade Distribution}\\
+ The grade distribution is as follows\\
+\hspace*{40mm}
+\begin{tabular}{ l l }
+Homework & 15\% \\
+Midterm 1 & 25\% \\
+Midterm 2 & 25\% \\
+Final Exam  & 35\%.
+\end{tabular} \\
+Also note that this is a curved class.\\
+\vspace{1mm}
+\textbf{\large\\ Academic misconduct:}
+ Cheating in exams is a serious offense and it will not be tolerated in this class. Details of the University policy on cheating can be found at \begin{center}
+ \url{http://depts.washington.edu/grading/pdf/AcademicResponsibility.pdf}. 
+ \end{center}
+\vspace{1mm}
+\textbf{\large\\ Resources for Students with Disabilities:}
+The University of Washington is committed to providing access, equal opportunity and reasonable accommodation in its services, programs, activities, education and employment for individuals with disabilities. To request disability accommodation contact the Disability Services Office at: 206-543-8924 or uwdrs@uw.edu .
+
+
+
+
+\end{document}
+
+
+

@@ -1,0 +1,1139 @@
+version: 0.10.0
+filePath: problem_1.tex
+options:
+  $BIBINPUTS:
+    - $ROOTDIR
+    - $ROOTDIR/$OUTDIR
+    - ''
+  $TEXINPUTS:
+    - $ROOTDIR
+    - $ROOTDIR/$OUTDIR
+    - ''
+  bibtexEngine: bibtex
+  cleanPatterns: &ref_0
+    - '**/*.aux'
+    - '**/*.aux.bak'
+    - '**/*.bbl'
+    - '**/*.bcf'
+    - '**/*.blg'
+    - '**/*.dvi'
+    - '**/*.fdb_latexmk'
+    - '**/*.fls'
+    - '**/*.idx'
+    - '**/*.idx.bak'
+    - '**/*.ilg'
+    - '**/*.ind'
+    - '**/*.lof'
+    - '**/*.log'
+    - '**/*.lol'
+    - '**/*.lot'
+    - '**/*.nav'
+    - '**/*.out'
+    - '**/*.pdf'
+    - '**/*.ps'
+    - '**/*.snm'
+    - '**/*.synctex.gz'
+    - '**/*.toc'
+    - '/**/_minted-${JOB}'
+    - '/${OUTDIR}/sage-plots-for-${JOB}.tex'
+    - /missfont.log
+    - /texput.log
+    - /texput.aux
+  dviToPdfEngine: xdvipdfmx
+  engine: pdflatex
+  epstopdfBoundingBox: default
+  epstopdfOutputPath: $DIR_0/$NAME_0.pdf
+  indexAutomaticRanges: true
+  indexEngine: makeindex
+  indexOrdering: word
+  indexSorting: default
+  knitrConcordance: true
+  knitrOutputPath: $JOB.tex
+  lhs2texStyle: poly
+  literateAgdaEngine: agda
+  literateHaskellEngine: lhs2TeX
+  loadCache: true
+  loadUserOptions: true
+  outputFormat: pdf
+  phaseCycles: 20
+  pweaveCacheDirectory: pweave-cache-for-$JOB
+  pweaveFigureDirectory: pweave-figures-for-$JOB
+  pweaveKernel: python3
+  pweaveOutputFormat: tex
+  pweaveOutputPath: $JOB.tex
+  saveCache: true
+  severity: info
+  validateCache: true
+  synctex: true
+  copyTargetsToRoot: true
+  outputDirectory: ''
+  shellEscape: enabled
+  intermediatePostScript: false
+  $PATH: /Library/TeX/texbin
+files:
+  dicy-instance.yaml-ParsedYAML:
+    timeStamp: 2018-01-05T04:17:13.988Z
+    jobNames: []
+    value:
+      severity: info
+    type: ParsedYAML
+  dicy.yaml-ParsedYAML:
+    jobNames: []
+    type: ParsedYAML
+  problem_1.yaml-ParsedYAML:
+    jobNames: []
+    type: ParsedYAML
+  problem_1.tex-ParsedLaTeXMagic:
+    timeStamp: 2018-01-05T04:17:14.806Z
+    jobNames: []
+    value: {}
+    type: ParsedLaTeXMagic
+  /Users/Nikolas/.dicy.yaml-ParsedYAML:
+    timeStamp: 2018-01-05T04:17:14.622Z
+    jobNames: []
+    value:
+      engine: pdflatex
+      synctex: true
+      severity: info
+      copyTargetsToRoot: true
+      outputDirectory: ''
+      outputFormat: pdf
+      cleanPatterns: *ref_0
+      shellEscape: enabled
+      intermediatePostScript: false
+      $PATH: /Library/TeX/texbin
+    type: ParsedYAML
+  problem_1.tex:
+    timeStamp: 2018-01-05T04:33:10.000Z
+    jobNames: []
+    hash: PEZ/7pIfvSeV4ktx9HC4HKecncOINC0ZbaTwLc99BM8=
+    type: LaTeX
+    subType: '11 pts, article'
+  /Users/Nikolas/.dicy.yaml:
+    timeStamp: 2018-01-05T04:17:14.000Z
+    jobNames: []
+    type: YAML
+  x.y-Nil:
+    jobNames: []
+    type: Nil
+  problem_1.fls-ParsedFileListing:
+    timeStamp: 2018-01-05T04:29:36.794Z
+    jobNames: []
+    value:
+      messages: []
+      inputs:
+        - /usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map
+        - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+        - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+        - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+        - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+        - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+        - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+        - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+        - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+        - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+        - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+        - >-
+          /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+        - >-
+          /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+        - >-
+          /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+        - >-
+          /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+        - /usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+        - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+        - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+        - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+        - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+        - >-
+          /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+        - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+        - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+        - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+        - /usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
+        - /usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo
+        - /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+        - /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+        - /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+        - /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+        - /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+        - /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+        - >-
+          /usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+        - >-
+          /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+        - /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+        - /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+        - /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
+        - /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+        - /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
+        - /usr/local/texlive/2017/texmf.cnf
+        - balls.jpeg
+        - problem_1.aux
+        - problem_1.tex
+      outputs:
+        - problem_1.aux
+        - problem_1.log
+        - problem_1.pdf
+      calls: []
+    type: ParsedFileListing
+  problem_1.log-ParsedLaTeXLog:
+    timeStamp: 2018-01-05T05:51:15.959Z
+    jobNames: []
+    value:
+      messages:
+        - name: pdfTeX
+          severity: info
+          text: 'graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)'
+          source:
+            file: /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 29
+              end: 29
+        - name: pdfTeX
+          severity: info
+          text: keyval 2014/10/28 v1.15 key=value parser (DPC)
+          source:
+            file: /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 31
+              end: 31
+        - name: pdfTeX
+          severity: info
+          text: 'graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)'
+          source:
+            file: /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 34
+              end: 34
+        - name: pdfTeX
+          severity: info
+          text: trig 2016/01/03 v1.10 sin cos tan (DPC)
+          source:
+            file: /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 36
+              end: 36
+        - severity: info
+          name: pdfTeX
+          category: Package graphics
+          text: 'Driver file: pdftex.def'
+          source:
+            file: /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+            range:
+              start: 99
+              end: 99
+          log:
+            file: problem_1.log
+            range:
+              start: 40
+              end: 40
+        - name: pdfTeX
+          severity: info
+          text: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 44
+              end: 44
+        - name: pdfTeX
+          severity: info
+          text: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 46
+              end: 46
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OML/cmm/m/it
+          source:
+            file: problem_1.tex
+            range:
+              start: 7
+              end: 7
+          log:
+            file: problem_1.log
+            range:
+              start: 57
+              end: 57
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: ... okay
+          source:
+            file: problem_1.tex
+            range:
+              start: 7
+              end: 7
+          log:
+            file: problem_1.log
+            range:
+              start: 58
+              end: 58
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for T1/cmr/m/n
+          source:
+            file: problem_1.tex
+            range:
+              start: 7
+              end: 7
+          log:
+            file: problem_1.log
+            range:
+              start: 59
+              end: 59
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: ... okay
+          source:
+            file: problem_1.tex
+            range:
+              start: 7
+              end: 7
+          log:
+            file: problem_1.log
+            range:
+              start: 60
+              end: 60
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OT1/cmr/m/n
+          source:
+            file: problem_1.tex
+            range:
+              start: 7
+              end: 7
+          log:
+            file: problem_1.log
+            range:
+              start: 61
+              end: 61
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: ... okay
+          source:
+            file: problem_1.tex
+            range:
+              start: 7
+              end: 7
+          log:
+            file: problem_1.log
+            range:
+              start: 62
+              end: 62
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OMS/cmsy/m/n
+          source:
+            file: problem_1.tex
+            range:
+              start: 7
+              end: 7
+          log:
+            file: problem_1.log
+            range:
+              start: 63
+              end: 63
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: ... okay
+          source:
+            file: problem_1.tex
+            range:
+              start: 7
+              end: 7
+          log:
+            file: problem_1.log
+            range:
+              start: 64
+              end: 64
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for OMX/cmex/m/n
+          source:
+            file: problem_1.tex
+            range:
+              start: 7
+              end: 7
+          log:
+            file: problem_1.log
+            range:
+              start: 65
+              end: 65
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: ... okay
+          source:
+            file: problem_1.tex
+            range:
+              start: 7
+              end: 7
+          log:
+            file: problem_1.log
+            range:
+              start: 66
+              end: 66
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: Checking defaults for U/cmr/m/n
+          source:
+            file: problem_1.tex
+            range:
+              start: 7
+              end: 7
+          log:
+            file: problem_1.log
+            range:
+              start: 67
+              end: 67
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: ... okay
+          source:
+            file: problem_1.tex
+            range:
+              start: 7
+              end: 7
+          log:
+            file: problem_1.log
+            range:
+              start: 68
+              end: 68
+        - name: pdfTeX
+          severity: info
+          text: >-
+            pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX
+            (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 83
+              end: 84
+        - name: pdfTeX
+          severity: info
+          text: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 86
+              end: 86
+        - severity: info
+          name: pdfTeX
+          category: Package ifluatex
+          text: LuaTeX not detected.
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 87
+              end: 87
+        - name: pdfTeX
+          severity: info
+          text: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+          source:
+            file: /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 89
+              end: 89
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: LuaTeX not detected.
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 91
+              end: 91
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdf@primitive is available.
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 92
+              end: 92
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdf@ifprimitive is available.
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 93
+              end: 93
+        - severity: info
+          name: pdfTeX
+          category: Package pdftexcmds
+          text: \pdfdraftmode found.
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 94
+              end: 94
+        - name: pdfTeX
+          severity: info
+          text: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 96
+              end: 96
+        - name: pdfTeX
+          severity: info
+          text: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+          source:
+            file: /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 98
+              end: 98
+        - name: pdfTeX
+          severity: info
+          text: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 100
+              end: 100
+        - name: pdfTeX
+          severity: info
+          text: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 102
+              end: 102
+        - name: pdfTeX
+          severity: info
+          text: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 104
+              end: 104
+        - name: pdfTeX
+          severity: info
+          text: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 106
+              end: 106
+        - severity: info
+          name: pdfTeX
+          category: Package etexcmds
+          text: >-
+            Could not find \expanded. That can mean that you are not using
+            pdfTeX 1.50 or that some package has redefined \expanded. In the
+            latter case, load this package earlier.
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+          log:
+            file: problem_1.log
+            range:
+              start: 107
+              end: 110
+        - severity: info
+          name: pdfTeX
+          category: Package epstopdf-base
+          text: Redefining graphics rule for `.eps'
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+            range:
+              start: 438
+              end: 438
+          log:
+            file: problem_1.log
+            range:
+              start: 112
+              end: 113
+        - severity: info
+          name: pdfTeX
+          category: Package grfext
+          text: >-
+            Graphics extension search list:
+            [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+            \AppendGraphicsExtensions.
+          source:
+            file: >-
+              /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+            range:
+              start: 456
+              end: 456
+          log:
+            file: problem_1.log
+            range:
+              start: 114
+              end: 117
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `cmex10' loaded for size <12>.
+          source:
+            file: problem_1.tex
+            range:
+              start: 8
+              end: 8
+          log:
+            file: problem_1.log
+            range:
+              start: 122
+              end: 123
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `cmex10' loaded for size <8>.
+          source:
+            file: problem_1.tex
+            range:
+              start: 8
+              end: 8
+          log:
+            file: problem_1.log
+            range:
+              start: 124
+              end: 125
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `cmex10' loaded for size <6>.
+          source:
+            file: problem_1.tex
+            range:
+              start: 8
+              end: 8
+          log:
+            file: problem_1.log
+            range:
+              start: 126
+              end: 127
+        - severity: warning
+          name: pdfTeX
+          category: LaTeX
+          text: No \author given.
+          source:
+            file: problem_1.tex
+          log:
+            file: problem_1.log
+            range:
+              start: 129
+              end: 129
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `cmex10' loaded for size <7>.
+          source:
+            file: problem_1.tex
+            range:
+              start: 10
+              end: 10
+          log:
+            file: problem_1.log
+            range:
+              start: 131
+              end: 132
+        - severity: info
+          name: pdfTeX
+          category: LaTeX Font
+          text: External font `cmex10' loaded for size <5>.
+          source:
+            file: problem_1.tex
+            range:
+              start: 10
+              end: 10
+          log:
+            file: problem_1.log
+            range:
+              start: 133
+              end: 134
+        - severity: info
+          name: pdfTeX
+          category: Package pdftex.def
+          text: 'balls.jpeg used Requested size: 180.67456pt x 189.2064pt.'
+          source:
+            file: problem_1.tex
+            range:
+              start: 16
+              end: 16
+          log:
+            file: problem_1.log
+            range:
+              start: 138
+              end: 139
+      inputs: []
+      outputs:
+        - problem_1.pdf
+      calls: []
+    type: ParsedLaTeXLog
+  problem_1.log:
+    timeStamp: 2018-01-05T05:51:15.000Z
+    jobNames: []
+    hash: 1Ow6T+qZzy+nEZuuKoq24S72zECONKB+GMejgOvQpLo=
+    type: LaTeXLog
+    subType: pdfTeX
+  problem_1.aux:
+    timeStamp: 2018-01-05T05:51:15.000Z
+    jobNames: []
+    hash: s24aTK5om/iaiMMROW2+4YsHztyl5KjkhB7H3lYSoMw=
+    type: LaTeXAuxilary
+  problem_1.fls:
+    timeStamp: 2018-01-05T05:51:15.000Z
+    jobNames: []
+    hash: iB5aN8eZiNJCRMZRUGk7AnmMa3UnCEue+rMs9EcYq9Q=
+    type: FileListing
+  problem_1.synctex.gz:
+    timeStamp: 2018-01-05T05:51:15.000Z
+    jobNames: []
+    hash: PYCDo3O0bOliLY+eJa+pp9hJU3kZxpYB2kjYQJscBpw=
+    type: SyncTeX
+  problem_1.aux-ParsedLaTeXAuxilary:
+    timeStamp: 2018-01-05T04:30:05.480Z
+    jobNames: []
+    value:
+      commands:
+        - relax
+        - '@writefile'
+        - newlabel
+    type: ParsedLaTeXAuxilary
+  /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb:
+    timeStamp: 2016-11-25T18:32:13.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls:
+    timeStamp: 2016-11-25T18:33:41.000Z
+    jobNames: []
+    type: LaTeXClass
+  /usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo:
+    timeStamp: 2016-11-25T18:33:41.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf:
+    timeStamp: 2017-05-06T16:23:44.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map:
+    timeStamp: 2017-05-24T02:37:52.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt:
+    timeStamp: 2017-05-24T02:38:07.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf.cnf:
+    timeStamp: 2017-05-24T02:37:45.000Z
+    jobNames: []
+  problem_1.pdf:
+    timeStamp: 2018-01-05T05:51:15.000Z
+    jobNames: []
+    hash: fioeIrDLaMKqpTnn/NSGYt5xBF/Lu0fm+HsAZ/caqrw=
+    type: PortableDocumentFormat
+  /usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map:
+    timeStamp: 2016-11-25T18:31:10.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm:
+    timeStamp: 2016-11-25T18:31:41.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm:
+    timeStamp: 2016-11-25T18:31:41.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm:
+    timeStamp: 2016-11-25T18:31:41.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm:
+    timeStamp: 2016-11-25T18:31:41.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm:
+    timeStamp: 2016-11-25T18:31:41.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr6.tfm:
+    timeStamp: 2016-11-25T18:31:41.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr8.tfm:
+    timeStamp: 2016-11-25T18:31:41.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm:
+    timeStamp: 2016-11-25T18:31:41.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm:
+    timeStamp: 2016-11-25T18:31:41.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm:
+    timeStamp: 2016-11-25T18:31:41.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb:
+    timeStamp: 2016-11-25T18:32:13.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb:
+    timeStamp: 2016-11-25T18:32:13.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb:
+    timeStamp: 2016-11-25T18:32:13.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm:
+    timeStamp: 2016-11-25T18:31:38.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm:
+    timeStamp: 2016-11-25T18:31:41.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty:
+    timeStamp: 2016-11-25T18:33:40.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty:
+    timeStamp: 2016-11-25T18:33:40.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty:
+    timeStamp: 2017-01-23T00:01:05.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty:
+    timeStamp: 2016-11-25T18:33:40.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty:
+    timeStamp: 2016-11-25T18:33:40.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty:
+    timeStamp: 2016-11-25T18:33:48.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii:
+    timeStamp: 2016-11-25T18:33:26.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty:
+    timeStamp: 2017-03-26T21:48:50.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty:
+    timeStamp: 2016-11-25T18:33:35.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty:
+    timeStamp: 2017-03-26T21:48:50.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg:
+    timeStamp: 2016-11-25T18:33:50.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def:
+    timeStamp: 2017-01-23T00:01:06.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty:
+    timeStamp: 2017-04-15T22:59:15.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty:
+    timeStamp: 2016-11-25T18:33:50.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty:
+    timeStamp: 2016-11-25T18:33:50.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty:
+    timeStamp: 2016-11-25T18:33:50.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg:
+    timeStamp: 2016-11-25T18:33:53.000Z
+    jobNames: []
+  /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty:
+    timeStamp: 2016-11-25T18:33:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty:
+    timeStamp: 2016-11-25T18:33:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty:
+    timeStamp: 2016-11-25T18:33:56.000Z
+    jobNames: []
+    type: LaTeXStyle
+  balls.jpeg:
+    timeStamp: 2018-01-05T05:51:02.000Z
+    jobNames: []
+    hash: 6wYjAK8K2jhTXzd9lb7CcZ2YYV++p+RFlTAtjkog3pg=
+rules:
+  - name: ApplyOptions
+    command: load
+    phase: initialize
+    parameters: []
+    inputs:
+      - dicy.yaml-ParsedYAML
+      - problem_1.yaml-ParsedYAML
+      - problem_1.tex-ParsedLaTeXMagic
+      - dicy-instance.yaml-ParsedYAML
+      - /Users/Nikolas/.dicy.yaml-ParsedYAML
+    outputs: []
+  - name: LoadAndValidateCache
+    command: load
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: ApplyOptions
+    command: load
+    phase: execute
+    parameters: []
+    inputs:
+      - dicy.yaml-ParsedYAML
+      - problem_1.yaml-ParsedYAML
+      - problem_1.tex-ParsedLaTeXMagic
+      - dicy-instance.yaml-ParsedYAML
+      - /Users/Nikolas/.dicy.yaml-ParsedYAML
+    outputs: []
+  - name: ParseOptionsFile
+    command: load
+    phase: execute
+    parameters: []
+    inputs:
+      - /Users/Nikolas/.dicy.yaml
+    outputs:
+      - /Users/Nikolas/.dicy.yaml-ParsedYAML
+  - name: ParseLaTeXMagic
+    command: load
+    phase: execute
+    parameters:
+      - problem_1.tex
+    inputs:
+      - problem_1.tex
+    outputs:
+      - problem_1.tex-ParsedLaTeXMagic
+  - name: AssignJobNames
+    command: load
+    phase: finalize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: FindLogFiles
+    command: build
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: LaTeX
+    command: build
+    phase: execute
+    parameters:
+      - problem_1.tex
+    inputs:
+      - problem_1.tex
+      - problem_1.fls-ParsedFileListing
+      - problem_1.log-ParsedLaTeXLog
+      - problem_1.aux
+      - >-
+        /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo
+      - /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
+      - /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+      - /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
+      - /usr/local/texlive/2017/texmf.cnf
+      - /usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map
+      - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+      - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+      - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+      - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+      - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+      - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+      - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+      - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+      - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+      - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+      - >-
+        /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+      - >-
+        /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+      - >-
+        /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+      - >-
+        /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+      - >-
+        /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+      - /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+      - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+      - >-
+        /usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+      - /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+      - balls.jpeg
+    outputs:
+      - problem_1.aux
+      - problem_1.fls
+      - problem_1.log
+      - problem_1.synctex.gz
+      - problem_1.pdf
+  - name: CheckForMissingBuildRule
+    command: build
+    phase: finalize
+    parameters:
+      - problem_1.tex
+    inputs:
+      - problem_1.tex
+    outputs: []
+  - name: FindLogFiles
+    command: log
+    phase: initialize
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: ReportLogMessages
+    command: log
+    phase: execute
+    parameters:
+      - problem_1.log-ParsedLaTeXLog
+    inputs:
+      - problem_1.log-ParsedLaTeXLog
+    outputs: []
+  - name: ParseLaTeXLog
+    command: log
+    phase: execute
+    parameters:
+      - problem_1.log
+    inputs:
+      - problem_1.log
+    outputs:
+      - problem_1.log-ParsedLaTeXLog
+  - name: SaveCache
+    command: save
+    phase: execute
+    parameters: []
+    inputs: []
+    outputs: []
+  - name: ParseLaTeXLog
+    command: build
+    phase: execute
+    parameters:
+      - problem_1.log
+    inputs:
+      - problem_1.log
+    outputs:
+      - problem_1.log-ParsedLaTeXLog
+  - name: ParseLaTeXAuxilary
+    command: build
+    phase: execute
+    parameters:
+      - problem_1.aux
+    inputs:
+      - problem_1.aux
+    outputs:
+      - problem_1.aux-ParsedLaTeXAuxilary
+  - name: ParseFileListing
+    command: build
+    phase: execute
+    parameters:
+      - problem_1.fls
+    inputs:
+      - problem_1.fls
+    outputs:
+      - problem_1.fls-ParsedFileListing

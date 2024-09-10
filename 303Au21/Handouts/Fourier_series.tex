@@ -1,0 +1,294 @@
+\documentclass[11pt]{article}
+
+\title{Applications of Fouirier series}
+\author{Nikolas Eptaminitakis}
+
+\usepackage[T1]{fontenc}
+\usepackage{librefranklin}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+
+
+% Margins
+ \setlength{\oddsidemargin}{-.20 in}
+ \setlength{\evensidemargin}{-.20 in}
+ \setlength{\textwidth}{6.8 in}
+ \setlength{\topmargin}{-0.5 in}
+ \setlength{\textheight}{9.2 in}
+\setlength{\headheight}{0.18 in}
+
+% Packages  
+%\usepackage[margin=0.8 in]{geometry} % decides size of margins, paper etc
+%\usepackage{palatino} % a font
+\usepackage{hhline}
+%\usepackage{forest}
+\usepackage{cancel} % to cross out stuff
+\usepackage{amsmath}
+\usepackage{marginnote}  % to put notes on the margins
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{accents}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{enumerate}
+%\usepackage{verbatim}
+\usepackage{comment}
+%\usepackage{makeidx}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage[noadjust]{cite}
+\usepackage{color}
+\usepackage{pst-node}
+\usepackage{tikz-cd} 
+\usepackage[toc,page]{appendix}			% table of contents
+
+
+% Global options
+\allowdisplaybreaks
+\mathtoolsset{showonlyrefs}
+
+
+% Math Operators
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\pv}{pv}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Int}{int}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\sing}{sing}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\II}{II}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\grad}{grad}
+\DeclareMathOperator{\adj}{adj}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\arcsinh}{arsinh}
+\DeclareMathOperator{\artanh}{artanh}
+\DeclareMathOperator{\proj}{proj}
+\DeclareMathOperator{\arcosh}{arcosh}
+\DeclareMathOperator{\Diff}{Diff}
+
+%Special Characters
+\let \sectionsymbol \S
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\C}{\mathbb{C}}
+\renewcommand{\S}{\mathbb{S}}
+\renewcommand{\H}{\mathbb{H}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\pr}{\mathcal{p}\mathcal{r}}
+\newcommand{\ru}{{\sqrt{u}}}
+\newcommand{\SM}{\overline{S^*M}}
+\newcommand{\pdo}{\Psi\text{DO}}
+\newcommand{\ox}{\o{\xi}}
+\newcommand{\tM}{\tilde{M}}
+\newcommand{\tg}{\tilde{g}}
+\newcommand{\p}{\partial}
+\newcommand{\n}{\nabla}
+\newcommand{\on}{\overline{\n}}
+\newcommand{\tn}{\tilde{\nabla}}
+\newcommand{\oM}{\overline{M}}
+\newcommand{\tX}{\widetilde{X}}
+\newcommand{\ta}{{\widetilde{\alpha}}}
+\newcommand{\tx}{{\widetilde{x}}}
+\newcommand{\oX}{\overline{X}}
+\newcommand{\X}{\mathfrak{X}}
+\newcommand{\oW}{\overline{W}}
+\newcommand{\oT}{\overline{T}}
+\newcommand{\tf}{\tilde{f}}
+\newcommand{\tr}{\tilde{\r}}
+\newcommand{\x}{{x_c}}
+\newcommand{\oU}{\overline{U}}
+\newcommand{\oH}{\overline{H}}
+\newcommand{\oSU}{\o{S^*U}}
+\newcommand{\oSH}{\overline{S^*\mathbb{H}^2}}
+\newcommand{\rg}{\rangle}
+\renewcommand{\lg}{\langle}
+\newcommand{\bTM}{{}^bT^*\oM}
+\newcommand{\Di}{\Delta\iota}
+\newcommand{\hx}{\hat{\xi}}
+\newcommand{\ba}{\breve{a}}
+\newcommand{\tz}{\widetilde{\zeta}}
+\newcommand{\hY}{\hat{Y}}
+\newcommand{\tPhi}{\widetilde{\Phi}}
+\newcommand{\og}{\overline{\g}}
+\newcommand{\prl}{\parallel}
+\newcommand{\cM}{\mathring{M}}
+\newcommand{\xsp}{x_{\mathrm{sp}}}
+
+
+% Calligraphic letters
+
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calE}{\mathcal{E}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calG}{\mathcal{G}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calL}{\mathcal{L}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\calR}{\mathcal{R}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calU}{\mathcal{U}}
+\newcommand{\calV}{\mathcal{V}}
+\newcommand{\calW}{\mathcal{W}}
+\newcommand{\calY}{\mathcal{Y}}
+\newcommand{\calZ}{\mathcal{Z}}
+
+
+%Greek Letters
+
+\renewcommand{\a}{\alpha}
+\renewcommand{\b}{\beta}
+\newcommand{\g}{\gamma}
+\renewcommand{\d}{\delta}
+\let\epsilon\varepsilon
+\newcommand{\e}{\epsilon}
+\newcommand{\h}{\eta}
+\newcommand{\z}{\zeta}
+\newcommand{\smsec}{\G_0^{\frac{1}{2}}}
+\newcommand{\G}{\Gamma}
+\newcommand{\oG}{\overline{\Gamma}}
+\renewcommand{\r}{\rho}
+\renewcommand{\t}{\tau}
+\renewcommand{\k}{\kappa}
+\renewcommand{\l}{\lambda}
+\newcommand{\s}{\sigma}
+\renewcommand{\th}{\theta}
+\newcommand{\om}{\omega}
+\newcommand{\w}{\omega}
+\renewcommand{\oe}{\overline{\eta}}
+\newcommand{\tU}{\tilde{U}}
+
+% Environments
+
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{{Lemma}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{remark}{Remark}
+\newtheorem{corollary}{Corollary}
+\newtheorem{example}{Example}
+\newtheorem{ansatz}{Ansatz}
+\newtheorem{problem}{Problem}
+\newtheorem{question}{Question}
+\newenvironment{solution}{\paragraph{Solution:}}{\hfill$\square$}
+\newtheorem{goal}{Goal}
+\newtheorem{claim}{Claim}
+\newenvironment{answer}{\paragraph{Answer:}}{\hfill$\square$}
+
+
+\let \o \undefined
+\def \o#1{\overline{#1}}
+\def\fr#1#2{\frac{#1}{#2}}
+\def\tt#1{\textit{#1}}
+
+% \let\printintex\undefined
+% \let\see\undefined
+
+\let\td\undefined
+\def \td#1{\widetilde{#1}}
+\let\implies\Rightarrow
+
+\begin{document}
+\section*{Applications of Fourier series}
+
+In this worksheet we will use Fourier series to explore the response of spring-mass systems (damped or undamped) to periodic external forces.
+
+\subsection*{Undamped motion}
+The equation for the displacement $x$ from equilibrium of an undamped spring-mass system under the influence of an external force $F(t)$ has the form
+\begin{equation}
+    mx''+kx=F(t),\label{spring-mass}
+\end{equation}
+where $m$ denotes the mass and $k$ the spring constant. Write $\w_0=\sqrt{k/m}$ for the \textit{natural frequency}  of the system.
+The general solution is of the form 
+\begin{equation}
+    s(t)=A\cos(\w _0 t)+B\sin(\w _0 t)+x_p(t),
+\end{equation}
+where $x_p(t)$ is a particular solution which depends on the force $F(t)$. Note that the first two terms are independent of the extenal force: they only depend on the parameters of the system and the initial conditions.
+
+Assume that $F(t)$ is piecewise smooth and periodic with period $2L$ \textbf{and that 
+$\w_0\neq \pi n/L$ for every integer $n.$} Then we can write a Fourier series for $F$ and use it to find a particular solution of \eqref{spring-mass} which is periodic of period $2L$, in the form
+\begin{equation}
+    \xsp(t) =\frac{a_0}{2}+\sum_{n=1}^\infty\left( a_n \cos\left(\frac{n\pi t}{L}\right)+b_n \sin\left(\frac{n\pi t}{L}\right)\right). \label{fourier}
+\end{equation}
+We call the formal solution obtained this way a \textit{steady periodic solution}. 
+
+% We will find a periodic particular solution of \eqref{spring-mass} which we call a  and denote by $x_{\mathrm{sp}}(t)$: 
+    
+
+\begin{problem}\label{prob1}
+    Suppose that $m=1$, $k=4$, and that the external force $F(t)$ is given by the even function of period $2L=4$ such that $F(t)=2t$ if $0<t<2$.
+    \begin{enumerate}
+        \item Sketch the graph of $F(t)$ for $-6<t<6$.
+        \item Compute the Fourier series of $F(t)$\label{item2}
+        \item Plug into \eqref{spring-mass} the Fourier series you found in Part \ref{item2} and the Fourier series for the steady periodic solution in \eqref{fourier} to determine the coefficients $a_n$ and $b_n$.
+        In this way you can find the Fourier series expansion of the steady periodic solution.
+        \item Write the general solution of \eqref{spring-mass} with for the specific parameters and $F$ given in this problem.
+    \end{enumerate}
+\end{problem}
+
+
+\begin{remark}
+    As you found in Problem \ref{prob1}, if the  equation has the form in \eqref{spring-mass} (with no term of the form $cx'$ in the left hand side), then if the Fourier series of $F$ has no sine terms, the same holds for the Fourier series \eqref{fourier} of $\xsp$. Similarly, if the Fourier series of $F$ has no cosine terms, the same holds for the one of $\xsp$.
+\end{remark}
+
+
+\subsection*{Pure resonance}
+We assumed before that the period of the external force was such that $\w_0\neq n\pi/L$ for all positive integers $n$. If there is any positive integer for which $\w_0= n\pi/L$ then we have the phenomenon of \textit{pure resonance}, which means that the amplitude of the general solution $x(t)$ increases unboundedly.
+
+% To see what goes wrong with the previous method in this case, consider a modified version of Problem \ref{prob1}:
+\begin{problem}
+    Let $m=1$, $k=\pi^2/4$ in \eqref{spring-mass}, with $F$ as in Problem \ref{prob1}.
+    As you already found out, if there is a periodic solution with period $2L=4$ with Fourier series expansion \eqref{fourier}, it will not have sine terms. 
+    Assuming that such a Fourier series exists, try to determine $a_0$, $a_1$ and $a_2$. What goes wrong when you try to find $a_1$?
+\end{problem}
+
+If the Fourier series of $F$ has the expansion
+\begin{equation}\label{fouriersine}
+    F(t)= \sum_{n=1}^\infty b_n \sin\left(\frac{n\pi}{L}t\right)
+\end{equation}and there is a positive integer $N$ for which $ \frac{N\pi}{L}=\w_0=\sqrt{k/m}$ then the solution  $x(t)$ analogous to \eqref{fourier} is of the form
+\begin{equation}
+    x(t)=-\frac{b_N}{2m\w_0}t\cos(\w_0 t)+\sum_{n\neq N}\dfrac{b_n}{m(\w_0^2-n^2\pi^2/L^2)}\sin\left(\frac{n\pi t}{L}\right).\label{solution}
+\end{equation}
+Notice that the first term increases unboundedly and the sine term with the ``problematic'' frequency $N\pi/L$ is not included in the right hand side.
+\footnote{To see how the solution \eqref{solution} was derived, you can think of using undetermined coefficients to solve infinitely many differential equations of the form $mx''+kx=b_n\sin(n\pi t/L)$ and superimposing them. For $n=N$, your solution will look like the first term in \eqref{solution}.}
+Eq. \eqref{solution} is \textit{not} a Fourier series.
+
+\begin{problem}
+    Determine whether pure resonance occurs for the following combinations of parameters $m$, $k$ and $F(t)$:
+    \begin{enumerate}
+        \item $m=1$, $k=4\pi^2$ and $F(t)$ is the odd function of period 2 with $F(t)=2t$ for $0<t<1$
+        \item $m=2$, $k=10$; $F(t)$ is the odd function of period 2 with $F(t)=1$ for $0<t<1$.
+    \end{enumerate}
+    Bonus: if pure resonance occurs, write a solution in the form \eqref{solution} and plot the first few terms using a computer algebra system.
+\end{problem}
+
+\subsection*{Damped forced motion}
+In the presence of damping, the equation of motion for the spring mass system under the influence of a periodic external force $F(t)$ becomes
+\begin{equation}
+    mx''+cx'+kx=F(t),\quad c>0.\label{eq:damped}
+\end{equation}
+The solution to \eqref{eq:damped} consists of a sum of a steady periodic solution and a transient solution, which decays exponentially fast. If $F(t)$ has an expansion of the form \eqref{fouriersine},
+then the steady periodic solution has the expansion
+\begin{equation}
+    \xsp(t)=\sum_{n=1}^\infty\frac{b_n\sin(\w_nt-\a_n)}{\sqrt{(k-m\w_n^2)^2+(c\w_n)^2}},
+\end{equation}
+where $\w_n=n\pi/L$ and the phase angle $\a_n$ is the angle satisfying
+\begin{equation}
+    \tan \a_n=\frac{c\w_n}{k-m\w_n^2} \text{ and }0<\alpha_n<\pi.
+\end{equation}
+
+\begin{problem}
+    If $m=2$, $c=0.01$, $k=4$, and $F(t)$  is the force in Problem 3 p.2, determine the coefficients and phase angles for the first three nonzero terms of the series corresponding to $\xsp$.
+\end{problem}
+
+
+\end{document}
