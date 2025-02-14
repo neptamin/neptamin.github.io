@@ -1,4 +1,0 @@
-
-In[194]:= Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.2/topologist.jpeg",
-VectorPlot[{{y,-x}},{x,-2,2},{y,-2,2}]]
-Out[194]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/16.2/topologist.jpeg

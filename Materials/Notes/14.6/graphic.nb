@@ -1,8 +1,0 @@
-In[26]:=
-s=2
-Out[26]= 2
-In[34]:= A=Show[ContourPlot[T[x,y],{x,-s,s},{y,-s,s}],
-VectorPlot[Evaluate[D[T[x,y],{{x,y}}]],{x,-s,s},{y,-s,s},VectorStyle->{Black,Large},StreamPoints->Fine]]
-Out[34]= 
-In[36]:= Export["/Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/14.6/graphic.png",A]
-Out[36]= /Users/Nikolas/Dropbox/Teaching/Math324H_F2017/Website Material/Notes/14.6/graphic.png
