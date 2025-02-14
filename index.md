@@ -9,6 +9,9 @@
 
 I am a Postdoc at the Institute of Differential Geometry, Leibniz University Hannover.
 <!-- Previously I was a  I was a graduate student at University of Washington, working with Professors [C. Robin Graham](https://sites.math.washington.edu/~robin/) and [Gunther Uhlmann](https://sites.math.washington.edu/~gunther/). -->
+
+Email: eptaminitakis@math.uni-hannover.de
+
 Contact information can be found [here](https://www.differentialgeometrie.uni-hannover.de/de/institut/personenverzeichnis/personen-detailansicht?tx_t3luhepv_t3luhepvoe%5Baction%5D=detailsToPerson&tx_t3luhepv_t3luhepvoe%5Bcontroller%5D=Organisation&tx_t3luhepv_t3luhepvoe%5BdisablePersHomepages%5D=0&tx_t3luhepv_t3luhepvoe%5Borganisation%5D=31&tx_t3luhepv_t3luhepvoe%5Bperson%5D=2900&tx_t3luhepv_t3luhepvoe%5Brole%5D=207&cHash=0760e4114b098b6360ef143c3ca913f7).
 
 
@@ -68,14 +71,12 @@ Trans. Am. Math. Soc. 377, No. 4, 2583-2633 (2024). [arxiv](https://arxiv.org/ab
 
 
 
- 
+<!--  
 
 ### Teaching
 
 In Winter Semester 2024/25 I am teaching Analysis I. 
-<!-- [Class Website.](https://www.math.purdue.edu/~neptamin/303Sp22/MA%2030300%20411%20&%20412.html) -->
-
-[Past Teaching](https://github.com/neptamin/neptamin.github.io/blob/main/Past%20Teaching/index.html)
+[Past Teaching](./Past_Teaching/CV_Eptaminitakis.pdf) -->
 
 <!-- ### Personal
 
