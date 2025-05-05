@@ -69,6 +69,10 @@ Trans. Am. Math. Soc. 377, No. 4, 2583-2633 (2024). [arxiv](https://arxiv.org/ab
  _Under Review_ [arxiv](https://arxiv.org/abs/2405.02521)
 
 
+8. The DC Kerr Effect in Nonlinear Optics. \
+ With Plamen Stefanov.\
+  [arxiv](https://arxiv.org/abs/2505.01392)
+
 
 
 <!--  
