@@ -18,8 +18,8 @@ Contact information can be found [here](https://www.differentialgeometrie.uni-ha
 ### Research
 
 
-My research is concerned with inverse problems and geometry, with tools mainly coming from (singular) microlocal analysis.
-In my thesis I studied the X-ray transform in the setting of asymptotically hyperbolic manifolds, whereas more recently I have been working on inverse problems for hyperbolic equations. I am also interested in interplays between the geodesic X-ray transform on closed manifolds and higher Teichmüller theory. More recently I have been working on questions regarding the range of the X-ray transform on hyperbolic space.
+My research is mainly concerned with inverse problems and geometry, with tools coming from (singular) microlocal analysis.
+In my thesis I studied the geodesic X-ray transform in the setting of asymptotically hyperbolic manifolds, which is a topic I am working on to this day. Another interest of mine are nonlinear hyperbolic PDEs and  inverse problems for them. I have also worked in connections between the geodesic X-ray transform on closed manifolds and higher Teichmüller theory. 
 
 [My CV](./CV_Eptaminitakis.pdf)
 
