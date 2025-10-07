@@ -73,7 +73,9 @@ Trans. Am. Math. Soc. 377, No. 4, 2583-2633 (2024). [arxiv](https://arxiv.org/ab
  With Plamen Stefanov.\
   _Under Review_ [arxiv](https://arxiv.org/abs/2505.01392)
 
-
+9. Tensor tomography on asymptotically hyperbolic surfaces\
+With François Monard and Yuzhou (Joey) Zou.\
+[arxiv](http://arxiv.org/abs/2510.04144)
 
 <!--  
 
