@@ -66,7 +66,7 @@ Trans. Am. Math. Soc. 377, No. 4, 2583-2633 (2024). [arxiv](https://arxiv.org/ab
 
 7. The hyperbolic X-ray transform: new range characterizations, mapping properties and functional relations. \
  With François Monard and Yuzhou (Joey) Zou.\
- _Accepted, Inverse Probl. Imaging_ [arxiv](https://arxiv.org/abs/2405.02521)
+ _To Appear, Inverse Probl. Imaging_ [arxiv](https://arxiv.org/abs/2405.02521)
 
 
 8. The DC Kerr Effect in Nonlinear Optics. \
@@ -75,7 +75,7 @@ Trans. Am. Math. Soc. 377, No. 4, 2583-2633 (2024). [arxiv](https://arxiv.org/ab
 
 9. Tensor tomography on asymptotically hyperbolic surfaces\
 With François Monard and Yuzhou (Joey) Zou.\
-[arxiv](http://arxiv.org/abs/2510.04144)
+  _Under Review_[arxiv](http://arxiv.org/abs/2510.04144)
 
 <!--  
 
