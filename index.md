@@ -75,7 +75,7 @@ Trans. Am. Math. Soc. 377, No. 4, 2583-2633 (2024). [arxiv](https://arxiv.org/ab
 
 9. Tensor tomography on asymptotically hyperbolic surfaces\
 With François Monard and Yuzhou (Joey) Zou.\
-  _Under Review_[arxiv](http://arxiv.org/abs/2510.04144)
+  [arxiv](http://arxiv.org/abs/2510.04144)
 
   10. Scattering rigidity for Hamiltonian systems with an application to Finsler geometry. \
  With Plamen Stefanov.\
