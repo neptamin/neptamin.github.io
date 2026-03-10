@@ -77,6 +77,10 @@ Trans. Am. Math. Soc. 377, No. 4, 2583-2633 (2024). [arxiv](https://arxiv.org/ab
 With François Monard and Yuzhou (Joey) Zou.\
   _Under Review_[arxiv](http://arxiv.org/abs/2510.04144)
 
+  10. Scattering rigidity for Hamiltonian systems with an application to Finsler geometry. \
+ With Plamen Stefanov.\
+   [arxiv](https://arxiv.org/abs/2603.06877)
+
 <!--  
 
 ### Teaching
