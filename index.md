@@ -71,15 +71,19 @@ Inverse Probl. Imaging 22, 65-100 (2026). [arxiv](https://arxiv.org/abs/2405.025
 
 8. The DC Kerr Effect in Nonlinear Optics. \
  With Plamen Stefanov.\
-  _Under Review_ [arxiv](https://arxiv.org/abs/2505.01392)
+  _Submitted_ [arxiv](https://arxiv.org/abs/2505.01392)
 
 9. Tensor tomography on asymptotically hyperbolic surfaces\
 With François Monard and Yuzhou (Joey) Zou.\
-  [arxiv](http://arxiv.org/abs/2510.04144)
+  _Submitted_ [arxiv](http://arxiv.org/abs/2510.04144)
 
   10. Scattering rigidity for Hamiltonian systems with an application to Finsler geometry. \
  With Plamen Stefanov.\
    [arxiv](https://arxiv.org/abs/2603.06877)
+
+   11. The Non-Abelian X-Ray Transform on Simple Asymptotically Hyperbolic Surfaces. \
+ With Haim Grebnev.\
+   [arxiv](https://arxiv.org/abs/2611.02264)
 
 <!--  
 
